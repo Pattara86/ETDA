@@ -1,0 +1,63 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "BigDataADF"
+		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"value": ""
+		},
+		"FileServer1_password": {
+			"value": ""
+		},
+		"FileServer5818_password": {
+			"value": ""
+		},
+		"FileServer5819_password": {
+			"value": ""
+		},
+		"localhost_connectionString": {
+			"value": ""
+		},
+		"localhost_password": {
+			"value": ""
+		},
+		"tempstore4project_password": {
+			"value": ""
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"value": "\\\\006329-NB\\EDTA_sources"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"value": "006329-NB\\Admin"
+		},
+		"FileServer5818_properties_typeProperties_host": {
+			"value": "\\\\GA\\ETDA_Source"
+		},
+		"FileServer5818_properties_typeProperties_userId": {
+			"value": "admin"
+		},
+		"FileServer5819_properties_typeProperties_host": {
+			"value": "\\\\006149-NB\\Sharefolder"
+		},
+		"FileServer5819_properties_typeProperties_userId": {
+			"value": "006149"
+		},
+		"localhost_properties_typeProperties_userName": {
+			"value": "006329-NB\\Admin"
+		},
+		"tempstore4project_properties_typeProperties_host": {
+			"value": "//tempstore4project.file.core.windows.net/sme-scoring-dataset"
+		},
+		"tempstore4project_properties_typeProperties_userId": {
+			"value": "tempstore4project"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}

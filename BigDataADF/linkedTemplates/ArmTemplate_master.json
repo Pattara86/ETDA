@@ -1,0 +1,214 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "BigDataADF"
+		},
+		"AzureSynapseAnalytics1_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'AzureSynapseAnalytics1'"
+		},
+		"FileServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'FileServer1'"
+		},
+		"FileServer5818_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'FileServer5818'"
+		},
+		"FileServer5819_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'FileServer5819'"
+		},
+		"localhost_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'localhost'"
+		},
+		"localhost_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'localhost'"
+		},
+		"tempstore4project_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'tempstore4project'"
+		},
+		"FileServer1_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "\\\\006329-NB\\EDTA_sources"
+		},
+		"FileServer1_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "006329-NB\\Admin"
+		},
+		"FileServer5818_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "\\\\GA\\ETDA_Source"
+		},
+		"FileServer5818_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "admin"
+		},
+		"FileServer5819_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "\\\\006149-NB\\Sharefolder"
+		},
+		"FileServer5819_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "006149"
+		},
+		"localhost_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "006329-NB\\Admin"
+		},
+		"tempstore4project_properties_typeProperties_host": {
+			"type": "string",
+			"defaultValue": "//tempstore4project.file.core.windows.net/sme-scoring-dataset"
+		},
+		"tempstore4project_properties_typeProperties_userId": {
+			"type": "string",
+			"defaultValue": "tempstore4project"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureSynapseAnalytics1_connectionString": {
+						"value": "[parameters('AzureSynapseAnalytics1_connectionString')]"
+					},
+					"tempstore4project_password": {
+						"value": "[parameters('tempstore4project_password')]"
+					},
+					"tempstore4project_properties_typeProperties_host": {
+						"value": "[parameters('tempstore4project_properties_typeProperties_host')]"
+					},
+					"tempstore4project_properties_typeProperties_userId": {
+						"value": "[parameters('tempstore4project_properties_typeProperties_userId')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"FileServer1_password": {
+						"value": "[parameters('FileServer1_password')]"
+					},
+					"FileServer5818_password": {
+						"value": "[parameters('FileServer5818_password')]"
+					},
+					"FileServer5819_password": {
+						"value": "[parameters('FileServer5819_password')]"
+					},
+					"localhost_connectionString": {
+						"value": "[parameters('localhost_connectionString')]"
+					},
+					"localhost_password": {
+						"value": "[parameters('localhost_password')]"
+					},
+					"FileServer1_properties_typeProperties_host": {
+						"value": "[parameters('FileServer1_properties_typeProperties_host')]"
+					},
+					"FileServer1_properties_typeProperties_userId": {
+						"value": "[parameters('FileServer1_properties_typeProperties_userId')]"
+					},
+					"FileServer5818_properties_typeProperties_host": {
+						"value": "[parameters('FileServer5818_properties_typeProperties_host')]"
+					},
+					"FileServer5818_properties_typeProperties_userId": {
+						"value": "[parameters('FileServer5818_properties_typeProperties_userId')]"
+					},
+					"FileServer5819_properties_typeProperties_host": {
+						"value": "[parameters('FileServer5819_properties_typeProperties_host')]"
+					},
+					"FileServer5819_properties_typeProperties_userId": {
+						"value": "[parameters('FileServer5819_properties_typeProperties_userId')]"
+					},
+					"localhost_properties_typeProperties_userName": {
+						"value": "[parameters('localhost_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ArmTemplate_0')]"
+			]
+		},
+		{
+			"name": "ArmTemplate_2",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_2.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ArmTemplate_1')]"
+			]
+		},
+		{
+			"name": "ArmTemplate_3",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_3.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ArmTemplate_2')]"
+			]
+		}
+	]
+}
