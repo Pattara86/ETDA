@@ -1,0 +1,20 @@
+{
+	"name": "localhost_iup56",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "localhost",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "localhost SQL Server"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "RAW",
+			"table": "iup56"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

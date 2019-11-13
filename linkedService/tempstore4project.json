@@ -1,0 +1,13 @@
+{
+	"name": "tempstore4project",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "AzureFileStorage",
+		"typeProperties": {
+			"host": "//tempstore4project.file.core.windows.net/sme-scoring-dataset",
+			"userId": "tempstore4project",
+			"encryptedCredential": "ew0KICAiVmVyc2lvbiI6ICIyMDE3LTExLTMwIiwNCiAgIlByb3RlY3Rpb25Nb2RlIjogIktleSIsDQogICJTZWNyZXRDb250ZW50VHlwZSI6ICJQbGFpbnRleHQiLA0KICAiQ3JlZGVudGlhbElkIjogIkJJR0RBVEFBREZfYmE1MGEwOTQtYTY2Zi00MWY5LWE4NjUtNmEwZTc0OWEzMzM0Ig0KfQ=="
+		}
+	}
+}

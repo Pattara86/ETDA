@@ -1,0 +1,1180 @@
+{
+	"name": "csv_iup60",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds1"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "preped_raw_iup_60.csv",
+				"folderPath": "[dataset01]IUP"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "answer_id",
+				"type": "String"
+			},
+			{
+				"name": "q1_sex",
+				"type": "String"
+			},
+			{
+				"name": "q2_status",
+				"type": "String"
+			},
+			{
+				"name": "q3_age",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_place",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_region",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_place_code",
+				"type": "String"
+			},
+			{
+				"name": "q5_edu",
+				"type": "String"
+			},
+			{
+				"name": "q6_1_occu",
+				"type": "String"
+			},
+			{
+				"name": "q6_2_occu_specify",
+				"type": "String"
+			},
+			{
+				"name": "q7_personal_income",
+				"type": "String"
+			},
+			{
+				"name": "q8_family_income",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_wd_time_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_wd_time_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_3_sn_wd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_4_sn_wd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_5_ent_wd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_6_ent_wd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_7_game_wd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_8_game_wd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_9_e-book_wd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_10_e-book_wd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_11_other_wd_spent_specify",
+				"type": "String"
+			},
+			{
+				"name": "q9_12_other_wd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_13_other_wd_spent_hour_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_14_total_wd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_15_total_wd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_16_hd_time_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_17_hd_time_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_18_sn_hd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_19_sn_hd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_20_ent_hd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_21_ent_hd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_22_game_hd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_23_game_hd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_24_e-book_hd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_25_e-book_hd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_26_other_hd_spent_specify",
+				"type": "String"
+			},
+			{
+				"name": "q9_27_other_hd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_28_other_hd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q9_29_total_hd_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_30_total_hd_spent_minute",
+				"type": "String"
+			},
+			{
+				"name": "q10_1_net_time_spent_change",
+				"type": "String"
+			},
+			{
+				"name": "q10_2_increased_time_hour",
+				"type": "String"
+			},
+			{
+				"name": "q10_3_increased_time_minute",
+				"type": "String"
+			},
+			{
+				"name": "q10_4_decreased_time_hour",
+				"type": "String"
+			},
+			{
+				"name": "q10_5_decreased_time_minute",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_place_home",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_place_office",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_place_school",
+				"type": "String"
+			},
+			{
+				"name": "q11_4_place_netcafe",
+				"type": "String"
+			},
+			{
+				"name": "q11_5_place_mall",
+				"type": "String"
+			},
+			{
+				"name": "q11_6_place_ondway",
+				"type": "String"
+			},
+			{
+				"name": "q11_7_place_other",
+				"type": "String"
+			},
+			{
+				"name": "q11_8_place_specify",
+				"type": "String"
+			},
+			{
+				"name": "q12_1_mail",
+				"type": "String"
+			},
+			{
+				"name": "q12_2_search",
+				"type": "String"
+			},
+			{
+				"name": "q12_3_e-learning",
+				"type": "String"
+			},
+			{
+				"name": "q12_4_job_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_5_stock",
+				"type": "String"
+			},
+			{
+				"name": "q12_6_bank",
+				"type": "String"
+			},
+			{
+				"name": "q12_7_e-tax",
+				"type": "String"
+			},
+			{
+				"name": "q12_8_shopping",
+				"type": "String"
+			},
+			{
+				"name": "q12_9_selling",
+				"type": "String"
+			},
+			{
+				"name": "q12_10_e-movie_ticket",
+				"type": "String"
+			},
+			{
+				"name": "q12_11_sn",
+				"type": "String"
+			},
+			{
+				"name": "q12_12_online_game",
+				"type": "String"
+			},
+			{
+				"name": "q12_13_youtube",
+				"type": "String"
+			},
+			{
+				"name": "q12_14_game_dl",
+				"type": "String"
+			},
+			{
+				"name": "q12_15_movie_dl",
+				"type": "String"
+			},
+			{
+				"name": "q12_16_song_dl",
+				"type": "String"
+			},
+			{
+				"name": "q12_17_software_dl",
+				"type": "String"
+			},
+			{
+				"name": "q12_18_tv",
+				"type": "String"
+			},
+			{
+				"name": "q12_19_tv_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_20_tv_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_21_song",
+				"type": "String"
+			},
+			{
+				"name": "q12_22_song_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_23_song_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_24_live",
+				"type": "String"
+			},
+			{
+				"name": "q12_25_live_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_26_live_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_27_movie",
+				"type": "String"
+			},
+			{
+				"name": "q12_28_movie_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_29_movie_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_46_phone",
+				"type": "String"
+			},
+			{
+				"name": "q12_47_phone_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_48_phone_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_49_ticket",
+				"type": "String"
+			},
+			{
+				"name": "q12_50_ticket_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_51_ticket_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_52_hotel",
+				"type": "String"
+			},
+			{
+				"name": "q12_53_hotel_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_54_hotel_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_55_taxi",
+				"type": "String"
+			},
+			{
+				"name": "q12_56_taxi_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_57_taxi_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_58_messenger",
+				"type": "String"
+			},
+			{
+				"name": "q12_59_messenger_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_60_messenger_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_61_food_order",
+				"type": "String"
+			},
+			{
+				"name": "q12_62_food_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_63_food_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_30_book",
+				"type": "String"
+			},
+			{
+				"name": "q12_31_book_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_32_book_offline",
+				"type": "String"
+			},
+			{
+				"name": "q12_33_book_children",
+				"type": "String"
+			},
+			{
+				"name": "q12_34_book_novel",
+				"type": "String"
+			},
+			{
+				"name": "q12_35_book_ent",
+				"type": "String"
+			},
+			{
+				"name": "q12_36_book_travel",
+				"type": "String"
+			},
+			{
+				"name": "q12_37_book_recipe",
+				"type": "String"
+			},
+			{
+				"name": "q12_38_book_health",
+				"type": "String"
+			},
+			{
+				"name": "q12_39_book_edu",
+				"type": "String"
+			},
+			{
+				"name": "q12_40_book_newspaper",
+				"type": "String"
+			},
+			{
+				"name": "q12_41_book_cartoon",
+				"type": "String"
+			},
+			{
+				"name": "q12_42_book_magazine",
+				"type": "String"
+			},
+			{
+				"name": "q12_43_book_documentary",
+				"type": "String"
+			},
+			{
+				"name": "q12_44_book_other",
+				"type": "String"
+			},
+			{
+				"name": "q12_45_book_specify",
+				"type": "String"
+			},
+			{
+				"name": "q12_64_activities_other",
+				"type": "String"
+			},
+			{
+				"name": "q12_65_activities__specify",
+				"type": "String"
+			},
+			{
+				"name": "q12_66_activities_other_online",
+				"type": "String"
+			},
+			{
+				"name": "q12_67_activities_other_offline",
+				"type": "String"
+			},
+			{
+				"name": "q13_1_youtube",
+				"type": "String"
+			},
+			{
+				"name": "q13_2_facebook",
+				"type": "String"
+			},
+			{
+				"name": "q13_3_twitter",
+				"type": "String"
+			},
+			{
+				"name": "q13_4_instagram",
+				"type": "String"
+			},
+			{
+				"name": "q13_5_whatsapp",
+				"type": "String"
+			},
+			{
+				"name": "q13_6_line",
+				"type": "String"
+			},
+			{
+				"name": "q13_7_pantip",
+				"type": "String"
+			},
+			{
+				"name": "q13_9_sn_specify",
+				"type": "String"
+			},
+			{
+				"name": "q13_8_sn_other",
+				"type": "String"
+			},
+			{
+				"name": "q14_1_prob_speed",
+				"type": "String"
+			},
+			{
+				"name": "q14_2_prob_reliable",
+				"type": "String"
+			},
+			{
+				"name": "q14_3_prob_notthrough",
+				"type": "String"
+			},
+			{
+				"name": "q14_4_prob_exp",
+				"type": "String"
+			},
+			{
+				"name": "q14_5_prob_ads",
+				"type": "String"
+			},
+			{
+				"name": "q14_6_prob_junk",
+				"type": "String"
+			},
+			{
+				"name": "q14_7_prob_virus",
+				"type": "String"
+			},
+			{
+				"name": "q14_8_prob_porn",
+				"type": "String"
+			},
+			{
+				"name": "q14_9_prob_deceive",
+				"type": "String"
+			},
+			{
+				"name": "q14_10_prob_privacy",
+				"type": "String"
+			},
+			{
+				"name": "q14_11_prob_integrity",
+				"type": "String"
+			},
+			{
+				"name": "q14_12_prob_help",
+				"type": "String"
+			},
+			{
+				"name": "q14_13_prob_other",
+				"type": "String"
+			},
+			{
+				"name": "q14_14_prob_specify",
+				"type": "String"
+			},
+			{
+				"name": "q15_1_trust_my_isp",
+				"type": "String"
+			},
+			{
+				"name": "q15_2_trust_my_mobile_banking",
+				"type": "String"
+			},
+			{
+				"name": "q15_3_trust_my_search_engine",
+				"type": "String"
+			},
+			{
+				"name": "q15_4_trust_the_internet",
+				"type": "String"
+			},
+			{
+				"name": "q15_5_trust_my_social_network",
+				"type": "String"
+			},
+			{
+				"name": "q15_6_trust_my_gov",
+				"type": "String"
+			},
+			{
+				"name": "q15_7_trust_foreign_gov",
+				"type": "String"
+			},
+			{
+				"name": "q16_1_avoid_unknow_email",
+				"type": "String"
+			},
+			{
+				"name": "q16_2_using_antivirus",
+				"type": "String"
+			},
+			{
+				"name": "q16_3_change_password",
+				"type": "String"
+			},
+			{
+				"name": "q16_4_necessary_bio",
+				"type": "String"
+			},
+			{
+				"name": "q16_5_less_net",
+				"type": "String"
+			},
+			{
+				"name": "q16_6_close_fb",
+				"type": "String"
+			},
+			{
+				"name": "q16_7_more_net",
+				"type": "String"
+			},
+			{
+				"name": "q16_8_behavior_other",
+				"type": "String"
+			},
+			{
+				"name": "q16_9_behavior_specify",
+				"type": "String"
+			},
+			{
+				"name": "q17_visit_web",
+				"type": "String"
+			},
+			{
+				"name": "q18_1_factor_offline_ad",
+				"type": "String"
+			},
+			{
+				"name": "q18_2_factor_online_ad",
+				"type": "String"
+			},
+			{
+				"name": "q18_3_factor_discount",
+				"type": "String"
+			},
+			{
+				"name": "q18_4_factor_review",
+				"type": "String"
+			},
+			{
+				"name": "q18_5_factor_seo",
+				"type": "String"
+			},
+			{
+				"name": "q18_6_factor_blogger",
+				"type": "String"
+			},
+			{
+				"name": "q18_7_factor_friend",
+				"type": "String"
+			},
+			{
+				"name": "q18_8_factor_other",
+				"type": "String"
+			},
+			{
+				"name": "q18_9_factor_specify",
+				"type": "String"
+			},
+			{
+				"name": "q18_10_ecom",
+				"type": "String"
+			},
+			{
+				"name": "q18_26_no_ecom_notest",
+				"type": "String"
+			},
+			{
+				"name": "q18_27_no_ecom_noseller",
+				"type": "String"
+			},
+			{
+				"name": "q18_28_no_ecom_loveshopping",
+				"type": "String"
+			},
+			{
+				"name": "q18_29_no_ecom_fear",
+				"type": "String"
+			},
+			{
+				"name": "q18_30_no_ecom_bad",
+				"type": "String"
+			},
+			{
+				"name": "q18_31_no_ecom_expensive",
+				"type": "String"
+			},
+			{
+				"name": "q18_32_no_ecom_highexpense",
+				"type": "String"
+			},
+			{
+				"name": "q18_33_no_ecom_noepayment",
+				"type": "String"
+			},
+			{
+				"name": "q18_34_no_ecom_difficult",
+				"type": "String"
+			},
+			{
+				"name": "q18_35_no_ecom_nogoods",
+				"type": "String"
+			},
+			{
+				"name": "q18_36_no_ecom_nodelivery",
+				"type": "String"
+			},
+			{
+				"name": "q18_37_no_ecom_nonet",
+				"type": "String"
+			},
+			{
+				"name": "q18_38_no_ecom_other",
+				"type": "String"
+			},
+			{
+				"name": "q18_39_no_ecom_specify",
+				"type": "String"
+			},
+			{
+				"name": "q18_11_yes_easy",
+				"type": "String"
+			},
+			{
+				"name": "q18_12_yes_safe",
+				"type": "String"
+			},
+			{
+				"name": "q18_13_yes_cheap",
+				"type": "String"
+			},
+			{
+				"name": "q18_14_yes_specific",
+				"type": "String"
+			},
+			{
+				"name": "q18_15_yes_call_center",
+				"type": "String"
+			},
+			{
+				"name": "q18_16_yes_mobile_response",
+				"type": "String"
+			},
+			{
+				"name": "q18_17_yes_promotion",
+				"type": "String"
+			},
+			{
+				"name": "q18_18_yes_guarantee",
+				"type": "String"
+			},
+			{
+				"name": "q18_18_yes_fast_delivery",
+				"type": "String"
+			},
+			{
+				"name": "q18_20_yes_famous",
+				"type": "String"
+			},
+			{
+				"name": "q18_21_yes_origin",
+				"type": "String"
+			},
+			{
+				"name": "q18_22_yes_trustmark",
+				"type": "String"
+			},
+			{
+				"name": "q18_23_yes_otop",
+				"type": "String"
+			},
+			{
+				"name": "q18_24_yes_other",
+				"type": "String"
+			},
+			{
+				"name": "q18_25_yes_specify",
+				"type": "String"
+			},
+			{
+				"name": "q19_1_vol_fashion",
+				"type": "String"
+			},
+			{
+				"name": "q19_2_val_fashion",
+				"type": "String"
+			},
+			{
+				"name": "q19_3_vol_ornament",
+				"type": "String"
+			},
+			{
+				"name": "q19_4_val_ornament",
+				"type": "String"
+			},
+			{
+				"name": "q19_5_vol_health",
+				"type": "String"
+			},
+			{
+				"name": "q19_6_val_health",
+				"type": "String"
+			},
+			{
+				"name": "q19_7_vol_food_online",
+				"type": "String"
+			},
+			{
+				"name": "q19_8_val_food_online",
+				"type": "String"
+			},
+			{
+				"name": "q19_9_vol_consumer_goods",
+				"type": "String"
+			},
+			{
+				"name": "q19_10_val_consumer_goods",
+				"type": "String"
+			},
+			{
+				"name": "q19_11_vol_decorate",
+				"type": "String"
+			},
+			{
+				"name": "q19_12_val_decorate",
+				"type": "String"
+			},
+			{
+				"name": "q19_13_vol_it",
+				"type": "String"
+			},
+			{
+				"name": "q19_14_val_it",
+				"type": "String"
+			},
+			{
+				"name": "q19_15_vol_finance",
+				"type": "String"
+			},
+			{
+				"name": "q19_16_val_finance",
+				"type": "String"
+			},
+			{
+				"name": "q19_17_vol_ent",
+				"type": "String"
+			},
+			{
+				"name": "q19_18_val_ent",
+				"type": "String"
+			},
+			{
+				"name": "q19_19_vol_download",
+				"type": "String"
+			},
+			{
+				"name": "q19_20_val_download",
+				"type": "String"
+			},
+			{
+				"name": "q19_21_vol_travel",
+				"type": "String"
+			},
+			{
+				"name": "q19_22_val_travel",
+				"type": "String"
+			},
+			{
+				"name": "q19_23_shop_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q19_24_vol_shop_other",
+				"type": "String"
+			},
+			{
+				"name": "q19_25_val_shop_other",
+				"type": "String"
+			},
+			{
+				"name": "q20_1_epayment_computer",
+				"type": "String"
+			},
+			{
+				"name": "q20_2_epayment_mobile",
+				"type": "String"
+			},
+			{
+				"name": "q21_00_payoffline",
+				"type": "String"
+			},
+			{
+				"name": "q21_13_epayment_appoint",
+				"type": "String"
+			},
+			{
+				"name": "q21_14_epayment_bank",
+				"type": "String"
+			},
+			{
+				"name": "q21_15_epayment_cod",
+				"type": "String"
+			},
+			{
+				"name": "q21_16_epayment_counter",
+				"type": "String"
+			},
+			{
+				"name": "q21_17_epayment_other",
+				"type": "String"
+			},
+			{
+				"name": "q21_18_epayment_specify",
+				"type": "String"
+			},
+			{
+				"name": "q21_00_payonline",
+				"type": "String"
+			},
+			{
+				"name": "q21_1_epayment_credit",
+				"type": "String"
+			},
+			{
+				"name": "q21_2_epayment_debit",
+				"type": "String"
+			},
+			{
+				"name": "q21_3_epayment_prepaid",
+				"type": "String"
+			},
+			{
+				"name": "q21_4_epayment_topup",
+				"type": "String"
+			},
+			{
+				"name": "q21_5_epayment_voucher",
+				"type": "String"
+			},
+			{
+				"name": "q21_6_epayment_atm",
+				"type": "String"
+			},
+			{
+				"name": "q21_7_epayment_netbanking",
+				"type": "String"
+			},
+			{
+				"name": "q21_8_epayment_mbanking",
+				"type": "String"
+			},
+			{
+				"name": "q21_9_epayment_ewallet",
+				"type": "String"
+			},
+			{
+				"name": "q21_10_epayment_bitcoin",
+				"type": "String"
+			},
+			{
+				"name": "q21_11_epayment_other",
+				"type": "String"
+			},
+			{
+				"name": "q21_12_epayment_specify",
+				"type": "String"
+			},
+			{
+				"name": "q22_1_epayment_online",
+				"type": "String"
+			},
+			{
+				"name": "q22_2_epayment_offline",
+				"type": "String"
+			},
+			{
+				"name": "q22_3_noepay_howto",
+				"type": "String"
+			},
+			{
+				"name": "q22_4_noepay_whichgoods",
+				"type": "String"
+			},
+			{
+				"name": "q22_5_noepay_no_evidence",
+				"type": "String"
+			},
+			{
+				"name": "q22_6_noepay_not_safe",
+				"type": "String"
+			},
+			{
+				"name": "q22_7_noepay_prefer_offline",
+				"type": "String"
+			},
+			{
+				"name": "q22_8_noepay_complicate",
+				"type": "String"
+			},
+			{
+				"name": "q22_9_noepay_other",
+				"type": "String"
+			},
+			{
+				"name": "q22_10_noepay_specify",
+				"type": "String"
+			},
+			{
+				"name": "q23_1_problem_ecom",
+				"type": "String"
+			},
+			{
+				"name": "q23_2_problem_unlike",
+				"type": "String"
+			},
+			{
+				"name": "q23_3_problem_incomplete",
+				"type": "String"
+			},
+			{
+				"name": "q23_4_problem_nogoods",
+				"type": "String"
+			},
+			{
+				"name": "q23_5_problem_delay",
+				"type": "String"
+			},
+			{
+				"name": "q23_6_problem_damage",
+				"type": "String"
+			},
+			{
+				"name": "q23_7_problem_notpayback",
+				"type": "String"
+			},
+			{
+				"name": "q23_8_problem_less_quality",
+				"type": "String"
+			},
+			{
+				"name": "q23_9_problem_other",
+				"type": "String"
+			},
+			{
+				"name": "q23_10_problem_specify",
+				"type": "String"
+			},
+			{
+				"name": "q24_1_complain",
+				"type": "String"
+			},
+			{
+				"name": "q24_2_complain_web",
+				"type": "String"
+			},
+			{
+				"name": "q24_3_complain_socialnetwok",
+				"type": "String"
+			},
+			{
+				"name": "q24_4_complain_police",
+				"type": "String"
+			},
+			{
+				"name": "q24_5_complain_gov_office",
+				"type": "String"
+			},
+			{
+				"name": "q24_6_complain_gov__specify",
+				"type": "String"
+			},
+			{
+				"name": "q24_7_complain_other",
+				"type": "String"
+			},
+			{
+				"name": "q24_8_complain_specify",
+				"type": "String"
+			},
+			{
+				"name": "q24_9_nocomplain_where",
+				"type": "String"
+			},
+			{
+				"name": "q24_10_nocomplain_how",
+				"type": "String"
+			},
+			{
+				"name": "q24_11_nocomplain_complex",
+				"type": "String"
+			},
+			{
+				"name": "q24_12_nocomplain_lessdamage",
+				"type": "String"
+			},
+			{
+				"name": "q24_13_nocomplain_other",
+				"type": "String"
+			},
+			{
+				"name": "q24_14_nocomplain_specify",
+				"type": "String"
+			},
+			{
+				"name": "q25_1_regulator_online_protect",
+				"type": "String"
+			},
+			{
+				"name": "q25_2_regulator_privacy",
+				"type": "String"
+			},
+			{
+				"name": "q25_3_regulator_cyber_crime",
+				"type": "String"
+			},
+			{
+				"name": "q25_4_regulator_data_breaches",
+				"type": "String"
+			},
+			{
+				"name": "q25_5_regulator_tax",
+				"type": "String"
+			},
+			{
+				"name": "q25_6_regulator_dispute",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

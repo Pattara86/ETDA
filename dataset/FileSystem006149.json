@@ -1,0 +1,28 @@
+{
+	"name": "FileSystem006149",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer5819",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "tsic_2544_md.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "\"id\"|\"tsic_2544_code\"|\"tsic_2544_desc\"|\"tsic_2552_code\"",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

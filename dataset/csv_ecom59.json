@@ -1,0 +1,324 @@
+{
+	"name": "csv_ecom59",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "preped_ecom_59.csv",
+				"folderPath": "[dataset02] Ecommerce/preped"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "answer_id",
+				"type": "String"
+			},
+			{
+				"name": "q1_channel_name",
+				"type": "String"
+			},
+			{
+				"name": "q2_total_emp",
+				"type": "String"
+			},
+			{
+				"name": "q3_0_1_industry_name",
+				"type": "String"
+			},
+			{
+				"name": "q3_0_2_industry_subcategory_name",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_1_total_revenue_58",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_2_est_growth_revenue_59",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_3_ecommerce_58_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_4_est_ecommerce_revenue_59_change_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_1_domestic_ecom_58_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_2_bangkok_reg_revenue_58_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_3_central_reg_revenue_58_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_4_north_reg_revenue_58_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_5_northeast_reg_revenue_58_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_6_south_reg_revenue_58_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_7_export_ecom_58_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_1_1_b2b_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_2_1_b2c_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_3_1_b2g_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_1_2_b2b_avg_spent",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_2_2_b2c_avg_spent",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_3_2_b2g_avg_spent",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_1_transaction_channel_emarketplace",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_2_transaction_channel_website",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_3_transaction_channel_social_media",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_4_transaction_channel_line",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_5_transaction_channel_instagram",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_6_transaction_channel_fb",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_7_transaction_channel_other",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_8_transaction_channel_platform",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_9_transaction_channel_platform_ebay",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_10_transaction_channel_platform_amazon",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_11_transaction_channel_platform_alibaba_pct",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_12_transaction_channel_platform_other_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_1_payment_channel_credit_card_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_2_payment_channel_paypal_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_3_payment_channel_ebanking_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_4_payment_channel_mobile_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_5_payment_channel_fedi_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_6_payment_channel_atm_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_7_payment_channel_bank_counter_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_8_payment_channel_direct_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_9_payment_channel_counter_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_10_payment_channel_postoffice_transfer_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_11_payment_channel_other_pct",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_1_mkt_budget_58",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_2_mkt_budget_58_online_pct",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_3_mkt_budget_58_offline_pct",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_1_delivery_channel_thaipost",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_2_delivery_channel_shipping_company",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_3_delivery_channel_receiving_point",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_4_delivery_channel_electronic_transferred",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_5_delivery_channel_own_transportation",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_6_delivery_channel_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_1_tax_exemption_income_tax",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_2_tax_exemption_material",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_3_tax_exemption_inport_duties_machinery",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_4__tax_deduct_transportation_costs_electricity",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_5_tax_exemption_installation_fee",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_6_tax_exemption_e_invoice",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_7_tax_exemption_other",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_1_legal_promotion_risk_insurance",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_2_legal_law_protection_of_electronic_money_transfers",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_3_legal_laws_online_consumer_protection",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_4_legal_electronic_signature",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_5_legal_enforcement_personal_data_protection_laws",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_6_legal_reduction_employment_conditions_skilled_workers",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_7_legal_other",
+				"type": "String"
+			},
+			{
+				"name": "q9_3_1_policy_promote_investment_it_infra",
+				"type": "String"
+			},
+			{
+				"name": "q9_3_2_policy_build_complaint_center",
+				"type": "String"
+			},
+			{
+				"name": "q9_3_3_policy_build_workforce_capcity",
+				"type": "String"
+			},
+			{
+				"name": "q9_3_4_policy_build_ebusiness_knowledge_center",
+				"type": "String"
+			},
+			{
+				"name": "q9_3_5_policy_build_ebusiness_document_standard",
+				"type": "String"
+			},
+			{
+				"name": "q9_3_6_policy_promote_info_ebusiness_thailand_aec",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,132 @@
+{
+	"name": "csv_mst_isic_bot_mp_md",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer5818",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds3/mdm"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "isic_bot_tsic_map_md.csv",
+				"folderPath": "OneDrive_1_11-8-2019"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "isic_full_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_catg_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_sub_catg_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_grp_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_sub_grp_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_bot_sub_act_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_catg_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_sub_catg_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_grp_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_sub_grp_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_bot_sub_act_code",
+				"type": "String"
+			},
+			{
+				"name": "isc_desc_en",
+				"type": "String"
+			},
+			{
+				"name": "parent_isic_full_code",
+				"type": "String"
+			},
+			{
+				"name": "manufacturing_catg_flg",
+				"type": "String"
+			},
+			{
+				"name": "service_catg_flg",
+				"type": "String"
+			},
+			{
+				"name": "wholsale_catg_flg",
+				"type": "String"
+			},
+			{
+				"name": "retail_catg_flg",
+				"type": "String"
+			},
+			{
+				"name": "isic_full_desc_th",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_catg",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_sub_catg",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_grp",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_sub_grp",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_code",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_desc",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

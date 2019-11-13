@@ -1,0 +1,704 @@
+{
+	"name": "csv_iup61",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds1"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "preped_raw_iup_61.csv",
+				"folderPath": "[dataset01]IUP"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "answer_id",
+				"type": "String"
+			},
+			{
+				"name": "q2_status",
+				"type": "String"
+			},
+			{
+				"name": "q1_sex",
+				"type": "String"
+			},
+			{
+				"name": "q3_age",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_place",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_place_code",
+				"type": "String"
+			},
+			{
+				"name": "q5_edu",
+				"type": "String"
+			},
+			{
+				"name": "q6_1_occu",
+				"type": "String"
+			},
+			{
+				"name": "q6_2_occu_specify",
+				"type": "String"
+			},
+			{
+				"name": "q7_personal_income",
+				"type": "String"
+			},
+			{
+				"name": "q8_family_income",
+				"type": "String"
+			},
+			{
+				"name": "q9_1_sm_wd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q9_2_sm_wd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q9_3_chat_wd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q9_4_chat_wd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q9_5_ent_wd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q9_6_ent_wd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q9_7_game_wd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q9_8_game_wd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q9_9_e_book_wd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q9_10_e_book_wd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q9_11_other_wd_spent_specify",
+				"type": "String"
+			},
+			{
+				"name": "q9_12_other_wd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q9_13_other_wd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q9_14_total_wd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q9_15_total_wd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q10_1_sn_hd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q10_2_sn_hd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q10_3_chat_hd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q10_4_chat_hd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q10_5_ent_hd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q10_6_ent_hd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q10_7_game_hd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q10_8_game_hd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q10_9_e_book_hd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q10_10_e_book_hd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q10_11_other_hd_spent_specify",
+				"type": "String"
+			},
+			{
+				"name": "q10_12_other_hd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q10_13_other_hd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q10_14_total_hd_spent_hr",
+				"type": "String"
+			},
+			{
+				"name": "q10_15_total_hd_spent_min",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_net_time_spent_change",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_increased_time_hr",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_increased_time_min",
+				"type": "String"
+			},
+			{
+				"name": "q11_4_decreased_time_hr",
+				"type": "String"
+			},
+			{
+				"name": "q11_5_decreased_time_min",
+				"type": "String"
+			},
+			{
+				"name": "q12_1_place_home",
+				"type": "String"
+			},
+			{
+				"name": "q12_2_place_office",
+				"type": "String"
+			},
+			{
+				"name": "q12_3_place_school",
+				"type": "String"
+			},
+			{
+				"name": "q12_4_place_netcafe",
+				"type": "String"
+			},
+			{
+				"name": "q12_5_place_mall",
+				"type": "String"
+			},
+			{
+				"name": "q12_6_place_ondway",
+				"type": "String"
+			},
+			{
+				"name": "q12_7_place_other",
+				"type": "String"
+			},
+			{
+				"name": "q12_8_place_specify",
+				"type": "String"
+			},
+			{
+				"name": "q13_1_sm",
+				"type": "String"
+			},
+			{
+				"name": "q13_2_live",
+				"type": "String"
+			},
+			{
+				"name": "q13_3_online_game",
+				"type": "String"
+			},
+			{
+				"name": "q13_4_mail",
+				"type": "String"
+			},
+			{
+				"name": "q13_5_search_for_work",
+				"type": "String"
+			},
+			{
+				"name": "q13_6_search_for_ent",
+				"type": "String"
+			},
+			{
+				"name": "q13_7_e_learning",
+				"type": "String"
+			},
+			{
+				"name": "q13_8_job_online",
+				"type": "String"
+			},
+			{
+				"name": "q13_9_stock",
+				"type": "String"
+			},
+			{
+				"name": "q13_10_selling",
+				"type": "String"
+			},
+			{
+				"name": "q13_11_e_movie_ticket",
+				"type": "String"
+			},
+			{
+				"name": "q13_12_e_tax",
+				"type": "String"
+			},
+			{
+				"name": "q13_13_download",
+				"type": "String"
+			},
+			{
+				"name": "q13_14_shopping",
+				"type": "String"
+			},
+			{
+				"name": "q13_15_shopping_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_16_chat_call",
+				"type": "String"
+			},
+			{
+				"name": "q13_17_chat_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_18_ent_",
+				"type": "String"
+			},
+			{
+				"name": "q13_19_ent_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_20_message",
+				"type": "String"
+			},
+			{
+				"name": "q13_21_message_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_22_book",
+				"type": "String"
+			},
+			{
+				"name": "q13_23_book_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_24_ticket",
+				"type": "String"
+			},
+			{
+				"name": "q13_25_ticket_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_26_hotel",
+				"type": "String"
+			},
+			{
+				"name": "q13_27_hotel_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_28_taxi",
+				"type": "String"
+			},
+			{
+				"name": "q13_29_taxi_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_30_messenger",
+				"type": "String"
+			},
+			{
+				"name": "q13_31_messenger_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_32_food",
+				"type": "String"
+			},
+			{
+				"name": "q13_33_food_compare",
+				"type": "String"
+			},
+			{
+				"name": "q13_34_payment",
+				"type": "String"
+			},
+			{
+				"name": "q13_35_payment_compare",
+				"type": "String"
+			},
+			{
+				"name": "q14_1_youtube",
+				"type": "String"
+			},
+			{
+				"name": "q14_2_facebook",
+				"type": "String"
+			},
+			{
+				"name": "q14_3_facebook_messenger",
+				"type": "String"
+			},
+			{
+				"name": "q14_4_twitter",
+				"type": "String"
+			},
+			{
+				"name": "q14_5_instagram",
+				"type": "String"
+			},
+			{
+				"name": "q14_6_whatsapp",
+				"type": "String"
+			},
+			{
+				"name": "q14_7_line",
+				"type": "String"
+			},
+			{
+				"name": "q14_8_pantip",
+				"type": "String"
+			},
+			{
+				"name": "q14_9_tinder",
+				"type": "String"
+			},
+			{
+				"name": "q14_1_sm_other",
+				"type": "String"
+			},
+			{
+				"name": "q14_11_sm_specify",
+				"type": "String"
+			},
+			{
+				"name": "q15_1_prob_speed",
+				"type": "String"
+			},
+			{
+				"name": "q15_2_prob_not_through",
+				"type": "String"
+			},
+			{
+				"name": "q15_3_prob_ads",
+				"type": "String"
+			},
+			{
+				"name": "q15_4_prob_virus",
+				"type": "String"
+			},
+			{
+				"name": "q15_5_prob_help",
+				"type": "String"
+			},
+			{
+				"name": "q15_6_prob_deceive",
+				"type": "String"
+			},
+			{
+				"name": "q15_7_prob_exp",
+				"type": "String"
+			},
+			{
+				"name": "q15_8_prob_reliable",
+				"type": "String"
+			},
+			{
+				"name": "q15_9_prob_junk",
+				"type": "String"
+			},
+			{
+				"name": "q15_10_prob_porn",
+				"type": "String"
+			},
+			{
+				"name": "q15_11_prob_integrity",
+				"type": "String"
+			},
+			{
+				"name": "q15_12_prob_privacy",
+				"type": "String"
+			},
+			{
+				"name": "q15_13_prob_other",
+				"type": "String"
+			},
+			{
+				"name": "q15_14_prob_specify",
+				"type": "String"
+			},
+			{
+				"name": "q16_1_change_password",
+				"type": "String"
+			},
+			{
+				"name": "q16_2_monitor_lock",
+				"type": "String"
+			},
+			{
+				"name": "q16_3_data_backup",
+				"type": "String"
+			},
+			{
+				"name": "q16_4_remember_password",
+				"type": "String"
+			},
+			{
+				"name": "q16_5_log_out",
+				"type": "String"
+			},
+			{
+				"name": "q16_6_delete_history",
+				"type": "String"
+			},
+			{
+				"name": "q16_7_strange_email",
+				"type": "String"
+			},
+			{
+				"name": "q16_8_tell_password",
+				"type": "String"
+			},
+			{
+				"name": "q16_9_upload_boarding_pass",
+				"type": "String"
+			},
+			{
+				"name": "q16_10_upload_picture",
+				"type": "String"
+			},
+			{
+				"name": "q16_11_share_location",
+				"type": "String"
+			},
+			{
+				"name": "q16_12_give_real_birthday",
+				"type": "String"
+			},
+			{
+				"name": "q16_13_use_other_computer",
+				"type": "String"
+			},
+			{
+				"name": "q16_14_click_link_from_web",
+				"type": "String"
+			},
+			{
+				"name": "q16_15_https",
+				"type": "String"
+			},
+			{
+				"name": "q17_1_payment_service",
+				"type": "String"
+			},
+			{
+				"name": "q17_2_general_service",
+				"type": "String"
+			},
+			{
+				"name": "q17_3_gov_service",
+				"type": "String"
+			},
+			{
+				"name": "q17_4_job_service",
+				"type": "String"
+			},
+			{
+				"name": "q17_5_sm_service",
+				"type": "String"
+			},
+			{
+				"name": "q17_6_free_service",
+				"type": "String"
+			},
+			{
+				"name": "q17_7_lucky_draw",
+				"type": "String"
+			},
+			{
+				"name": "q17_8_dp_factor_other",
+				"type": "String"
+			},
+			{
+				"name": "q17_9_dp_factor_specify",
+				"type": "String"
+			},
+			{
+				"name": "q18_1_dp_policy",
+				"type": "String"
+			},
+			{
+				"name": "q18_2_dp_policy_how",
+				"type": "String"
+			},
+			{
+				"name": "q19_1_no_dp_follow_policy",
+				"type": "String"
+			},
+			{
+				"name": "q19_2_no_dp_law_protect",
+				"type": "String"
+			},
+			{
+				"name": "q19_3_no_dp_where",
+				"type": "String"
+			},
+			{
+				"name": "q19_4_no_dp_important",
+				"type": "String"
+			},
+			{
+				"name": "q19_5_no_dp_too_long",
+				"type": "String"
+			},
+			{
+				"name": "q19_6_no_dp_language_law",
+				"type": "String"
+			},
+			{
+				"name": "q19_7_no_dp_eng_use",
+				"type": "String"
+			},
+			{
+				"name": "q19_8_no_dp_enough",
+				"type": "String"
+			},
+			{
+				"name": "q19_9_no_dp_other",
+				"type": "String"
+			},
+			{
+				"name": "q19_10_no_dp_specify",
+				"type": "String"
+			},
+			{
+				"name": "q20_1_worry_free_wifi",
+				"type": "String"
+			},
+			{
+				"name": "q20_2_worry_google_map",
+				"type": "String"
+			},
+			{
+				"name": "q20_3_worry_epayment",
+				"type": "String"
+			},
+			{
+				"name": "q20_4_worry_download",
+				"type": "String"
+			},
+			{
+				"name": "q20_5_worry_lucky_draw",
+				"type": "String"
+			},
+			{
+				"name": "q21_1_role_me",
+				"type": "String"
+			},
+			{
+				"name": "q21_2_role_website",
+				"type": "String"
+			},
+			{
+				"name": "q21_3_role_isp",
+				"type": "String"
+			},
+			{
+				"name": "q21_4_role_gov",
+				"type": "String"
+			},
+			{
+				"name": "q21_5_role_other",
+				"type": "String"
+			},
+			{
+				"name": "q21_6_role_specify",
+				"type": "String"
+			},
+			{
+				"name": "q22_privacy_setup",
+				"type": "String"
+			},
+			{
+				"name": "q23_1_no_privacy_unknow",
+				"type": "String"
+			},
+			{
+				"name": "q23_2_no_privacy_not_know_how_to",
+				"type": "String"
+			},
+			{
+				"name": "q23_3_no_privacy_already_set",
+				"type": "String"
+			},
+			{
+				"name": "q23_4_no_privacy_no_care",
+				"type": "String"
+			},
+			{
+				"name": "q23_5_no_privacy_no_time",
+				"type": "String"
+			},
+			{
+				"name": "q23_6_no_privacy_other",
+				"type": "String"
+			},
+			{
+				"name": "q23_7_no_privacy_specify",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

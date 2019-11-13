@@ -1,0 +1,92 @@
+{
+	"name": "csv_mst_provice_md_2018",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer5818",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds3/mdm"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "province_md_2018.csv",
+				"folderPath": "OneDrive_1_11-8-2019"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "province_name_th",
+				"type": "String"
+			},
+			{
+				"name": "province_name_en",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "last_upd_dttm",
+				"type": "String"
+			},
+			{
+				"name": "province_code",
+				"type": "String"
+			},
+			{
+				"name": "Region",
+				"type": "String"
+			},
+			{
+				"name": "MajorHospital",
+				"type": "String"
+			},
+			{
+				"name": "Longitude",
+				"type": "String"
+			},
+			{
+				"name": "Latitude",
+				"type": "String"
+			},
+			{
+				"name": "Capitol",
+				"type": "String"
+			},
+			{
+				"name": "Population",
+				"type": "String"
+			},
+			{
+				"name": "Area",
+				"type": "String"
+			},
+			{
+				"name": "PopDensity",
+				"type": "String"
+			},
+			{
+				"name": "LargestCity",
+				"type": "String"
+			},
+			{
+				"name": "AbbrevCH",
+				"type": "String"
+			},
+			{
+				"name": "ISO",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

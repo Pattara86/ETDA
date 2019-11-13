@@ -1,0 +1,20 @@
+{
+	"name": "dwh_ds1_iup60",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DWH/ds1"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "RAW",
+			"table": "ds1_iup_60"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

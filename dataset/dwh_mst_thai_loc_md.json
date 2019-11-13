@@ -1,0 +1,20 @@
+{
+	"name": "dwh_mst_thai_loc_md",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DWH/ds3/mdm"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "RAW",
+			"table": "mst_thai_loc_md"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

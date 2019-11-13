@@ -1,0 +1,740 @@
+{
+	"name": "csv_iup57",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds1"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "preped_raw_iup_57.csv",
+				"folderPath": "[dataset01]IUP"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "answer_id",
+				"type": "String"
+			},
+			{
+				"name": "q1_sex",
+				"type": "String"
+			},
+			{
+				"name": "q2_status",
+				"type": "String"
+			},
+			{
+				"name": "q3_age",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_place",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_place_code",
+				"type": "String"
+			},
+			{
+				"name": "q5_edu",
+				"type": "String"
+			},
+			{
+				"name": "q6_1_occu",
+				"type": "String"
+			},
+			{
+				"name": "q6_2_occu_specify",
+				"type": "String"
+			},
+			{
+				"name": "q7_member",
+				"type": "String"
+			},
+			{
+				"name": "q8_family_income",
+				"type": "String"
+			},
+			{
+				"name": "q9_experience",
+				"type": "String"
+			},
+			{
+				"name": "q10_last_7d_time_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_time_pc",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_time_nb",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_time_sp",
+				"type": "String"
+			},
+			{
+				"name": "q11_4_time_tl",
+				"type": "String"
+			},
+			{
+				"name": "q11_5_time_stv",
+				"type": "String"
+			},
+			{
+				"name": "q11_6_pc08",
+				"type": "String"
+			},
+			{
+				"name": "q11_7_pc12",
+				"type": "String"
+			},
+			{
+				"name": "q11_8_pc16",
+				"type": "String"
+			},
+			{
+				"name": "q11_9_pc20",
+				"type": "String"
+			},
+			{
+				"name": "q11_10_pc00",
+				"type": "String"
+			},
+			{
+				"name": "q11_11_nb08",
+				"type": "String"
+			},
+			{
+				"name": "q11_12_nb12",
+				"type": "String"
+			},
+			{
+				"name": "q11_13_nb16",
+				"type": "String"
+			},
+			{
+				"name": "q11_14_nb20",
+				"type": "String"
+			},
+			{
+				"name": "q11_15_nb00",
+				"type": "String"
+			},
+			{
+				"name": "q11_16_sp08",
+				"type": "String"
+			},
+			{
+				"name": "q11_17_sp12",
+				"type": "String"
+			},
+			{
+				"name": "q11_18_sp16",
+				"type": "String"
+			},
+			{
+				"name": "q11_19_sp20",
+				"type": "String"
+			},
+			{
+				"name": "q11_20_sp00",
+				"type": "String"
+			},
+			{
+				"name": "q11_21_tl08",
+				"type": "String"
+			},
+			{
+				"name": "q11_22_tl12",
+				"type": "String"
+			},
+			{
+				"name": "q11_23_tl16",
+				"type": "String"
+			},
+			{
+				"name": "q11_24_tl20",
+				"type": "String"
+			},
+			{
+				"name": "q11_25_tl00",
+				"type": "String"
+			},
+			{
+				"name": "q11_26_stv08",
+				"type": "String"
+			},
+			{
+				"name": "q11_27_stv12",
+				"type": "String"
+			},
+			{
+				"name": "q11_28_stv16",
+				"type": "String"
+			},
+			{
+				"name": "q11_29_stv20",
+				"type": "String"
+			},
+			{
+				"name": "q11_30_stv00",
+				"type": "String"
+			},
+			{
+				"name": "q12_1_place_ho",
+				"type": "String"
+			},
+			{
+				"name": "q12_2_place_off",
+				"type": "String"
+			},
+			{
+				"name": "q12_3_place_sch",
+				"type": "String"
+			},
+			{
+				"name": "q12_4_place_netcaf",
+				"type": "String"
+			},
+			{
+				"name": "q12_5_place_govict",
+				"type": "String"
+			},
+			{
+				"name": "q12_6_place_mall",
+				"type": "String"
+			},
+			{
+				"name": "q12_7_place_onway",
+				"type": "String"
+			},
+			{
+				"name": "q12_8_place_other",
+				"type": "String"
+			},
+			{
+				"name": "q12_9_place_specify",
+				"type": "String"
+			},
+			{
+				"name": "q13_1_freewifi",
+				"type": "String"
+			},
+			{
+				"name": "q13_2_freewifi_un",
+				"type": "String"
+			},
+			{
+				"name": "q13_3_freewifi_n",
+				"type": "String"
+			},
+			{
+				"name": "q14_1_actcom_sn",
+				"type": "String"
+			},
+			{
+				"name": "q14_2_actcom_mail",
+				"type": "String"
+			},
+			{
+				"name": "q14_3_actcom_game",
+				"type": "String"
+			},
+			{
+				"name": "q14_4_actcom_book",
+				"type": "String"
+			},
+			{
+				"name": "q14_5_actcom_ent",
+				"type": "String"
+			},
+			{
+				"name": "q14_6_actcom_load",
+				"type": "String"
+			},
+			{
+				"name": "q14_7_actcom_ticket",
+				"type": "String"
+			},
+			{
+				"name": "q14_8_actcom_shopping",
+				"type": "String"
+			},
+			{
+				"name": "q14_9_actcom_bank",
+				"type": "String"
+			},
+			{
+				"name": "q14_10_actcom_stock",
+				"type": "String"
+			},
+			{
+				"name": "q14_11_actcom_search",
+				"type": "String"
+			},
+			{
+				"name": "q14_12_actcom_other",
+				"type": "String"
+			},
+			{
+				"name": "q14_13_actcom_ specify",
+				"type": "String"
+			},
+			{
+				"name": "q14_14_actmo_sn",
+				"type": "String"
+			},
+			{
+				"name": "q14_15_actmo_mail",
+				"type": "String"
+			},
+			{
+				"name": "q14_16_actmo_game",
+				"type": "String"
+			},
+			{
+				"name": "q14_17_actmo_book",
+				"type": "String"
+			},
+			{
+				"name": "q14_18_actmo_ent",
+				"type": "String"
+			},
+			{
+				"name": "q14_19_actmo_load",
+				"type": "String"
+			},
+			{
+				"name": "q14_20_actmo_ticket",
+				"type": "String"
+			},
+			{
+				"name": "q14_21_actmo_shopping",
+				"type": "String"
+			},
+			{
+				"name": "q14_22_actmo_bank",
+				"type": "String"
+			},
+			{
+				"name": "q14_23_actmo_stock",
+				"type": "String"
+			},
+			{
+				"name": "q14_24_actmo_search",
+				"type": "String"
+			},
+			{
+				"name": "q14_25_actmo_other",
+				"type": "String"
+			},
+			{
+				"name": "q14_26_actmo_specify",
+				"type": "String"
+			},
+			{
+				"name": "q15_1_factor_adv",
+				"type": "String"
+			},
+			{
+				"name": "q15_2_factor_blog",
+				"type": "String"
+			},
+			{
+				"name": "q15_3_factor_friend",
+				"type": "String"
+			},
+			{
+				"name": "q15_4_factor_web",
+				"type": "String"
+			},
+			{
+				"name": "q15_5_factor_seller",
+				"type": "String"
+			},
+			{
+				"name": "q15_6_factor_trust",
+				"type": "String"
+			},
+			{
+				"name": "q15_7_factor_price",
+				"type": "String"
+			},
+			{
+				"name": "q15_8_factor_promotion",
+				"type": "String"
+			},
+			{
+				"name": "q16_1_sn_facebook",
+				"type": "String"
+			},
+			{
+				"name": "q16_2_sn_google",
+				"type": "String"
+			},
+			{
+				"name": "q16_3_sn_twitter",
+				"type": "String"
+			},
+			{
+				"name": "q16_4_sn_instagram",
+				"type": "String"
+			},
+			{
+				"name": "q16_5_sn_whatsapp",
+				"type": "String"
+			},
+			{
+				"name": "q16_6_sn_line",
+				"type": "String"
+			},
+			{
+				"name": "q16_7_sn_other",
+				"type": "String"
+			},
+			{
+				"name": "q16_8_sn_specify",
+				"type": "String"
+			},
+			{
+				"name": "q17_1_pri_password",
+				"type": "String"
+			},
+			{
+				"name": "q17_2_pri_setting",
+				"type": "String"
+			},
+			{
+				"name": "q17_3_pri_photo",
+				"type": "String"
+			},
+			{
+				"name": "q17_4_pri_status",
+				"type": "String"
+			},
+			{
+				"name": "q17_5_pri_place",
+				"type": "String"
+			},
+			{
+				"name": "q17_6_pri_info",
+				"type": "String"
+			},
+			{
+				"name": "q17_7_pri_friend",
+				"type": "String"
+			},
+			{
+				"name": "q17_8_pri_tos",
+				"type": "String"
+			},
+			{
+				"name": "q18_comact",
+				"type": "String"
+			},
+			{
+				"name": "q19_1_mo_exper",
+				"type": "String"
+			},
+			{
+				"name": "q19_2_nomo_specify",
+				"type": "String"
+			},
+			{
+				"name": "q20_mo_password",
+				"type": "String"
+			},
+			{
+				"name": "q21_mo_setup",
+				"type": "String"
+			},
+			{
+				"name": "q22_1_moapp_wellknown",
+				"type": "String"
+			},
+			{
+				"name": "q22_2_moapp_free",
+				"type": "String"
+			},
+			{
+				"name": "q22_3_moapp_pop",
+				"type": "String"
+			},
+			{
+				"name": "q22_4_moapp_friend",
+				"type": "String"
+			},
+			{
+				"name": "q22_5_moapp_seller",
+				"type": "String"
+			},
+			{
+				"name": "q22_6_moapp_blog",
+				"type": "String"
+			},
+			{
+				"name": "q22_7_moapp_promotion",
+				"type": "String"
+			},
+			{
+				"name": "q22_8_moapp_ads",
+				"type": "String"
+			},
+			{
+				"name": "q23_mo_clean",
+				"type": "String"
+			},
+			{
+				"name": "q24_mo_antivirus",
+				"type": "String"
+			},
+			{
+				"name": "q25_1_moecom",
+				"type": "String"
+			},
+			{
+				"name": "q25_2_moecom_nomoexper",
+				"type": "String"
+			},
+			{
+				"name": "q25_3_moecom_freq",
+				"type": "String"
+			},
+			{
+				"name": "q25_4_moecom_value",
+				"type": "String"
+			},
+			{
+				"name": "q25_5_moecom_pay_cash",
+				"type": "String"
+			},
+			{
+				"name": "q25_6_moecom_pay_credit",
+				"type": "String"
+			},
+			{
+				"name": "q25_7_moecom_pay_debit",
+				"type": "String"
+			},
+			{
+				"name": "q25_8_moecom_pay_bank",
+				"type": "String"
+			},
+			{
+				"name": "q25_9_moecom_pay_counter",
+				"type": "String"
+			},
+			{
+				"name": "q25_10_moecom_pay_other",
+				"type": "String"
+			},
+			{
+				"name": "q25_11_moecom_pay_specify",
+				"type": "String"
+			},
+			{
+				"name": "q26_1_mobank",
+				"type": "String"
+			},
+			{
+				"name": "q26_2_mobank_nomoexper",
+				"type": "String"
+			},
+			{
+				"name": "q26_3_mobank_freq",
+				"type": "String"
+			},
+			{
+				"name": "q26_4_mobank_value",
+				"type": "String"
+			},
+			{
+				"name": "q26_5_mobank_channel",
+				"type": "String"
+			},
+			{
+				"name": "q26_6_mobank_channel_nomoexper",
+				"type": "String"
+			},
+			{
+				"name": "q27_1_compl_web",
+				"type": "String"
+			},
+			{
+				"name": "q27_2_compl_fb",
+				"type": "String"
+			},
+			{
+				"name": "q27_3_compl_board",
+				"type": "String"
+			},
+			{
+				"name": "q27_4_compl_sm",
+				"type": "String"
+			},
+			{
+				"name": "q27_5_compl_thaicert",
+				"type": "String"
+			},
+			{
+				"name": "q27_6_compl_skb",
+				"type": "String"
+			},
+			{
+				"name": "q27_7_compl_aoryor",
+				"type": "String"
+			},
+			{
+				"name": "q27_8_compl_hotline",
+				"type": "String"
+			},
+			{
+				"name": "q27_9_compl_191",
+				"type": "String"
+			},
+			{
+				"name": "q27_10_compl_1111",
+				"type": "String"
+			},
+			{
+				"name": "q27_11_compl_1212",
+				"type": "String"
+			},
+			{
+				"name": "q27_12_compl_1213",
+				"type": "String"
+			},
+			{
+				"name": "q27_13_nocomplain",
+				"type": "String"
+			},
+			{
+				"name": "q27_14_compl_specify",
+				"type": "String"
+			},
+			{
+				"name": "q28_1_center",
+				"type": "String"
+			},
+			{
+				"name": "q28_2_center_specify",
+				"type": "String"
+			},
+			{
+				"name": "q29_1_prob_speed",
+				"type": "String"
+			},
+			{
+				"name": "q29_2_prob_addict",
+				"type": "String"
+			},
+			{
+				"name": "q29_3_prob_reliable",
+				"type": "String"
+			},
+			{
+				"name": "q29_4_prob_notthrough",
+				"type": "String"
+			},
+			{
+				"name": "q29_5_prob_exp",
+				"type": "String"
+			},
+			{
+				"name": "q29_6_prob_ads",
+				"type": "String"
+			},
+			{
+				"name": "q29_7_prob_junk",
+				"type": "String"
+			},
+			{
+				"name": "q29_8_prob_porn",
+				"type": "String"
+			},
+			{
+				"name": "q29_9_prob_integrity",
+				"type": "String"
+			},
+			{
+				"name": "q29_10_prob_virus",
+				"type": "String"
+			},
+			{
+				"name": "q29_11_prob_deceive",
+				"type": "String"
+			},
+			{
+				"name": "q29_12_prob_privacy",
+				"type": "String"
+			},
+			{
+				"name": "q29_13_prob_gov_help",
+				"type": "String"
+			},
+			{
+				"name": "q29_14_prob_law",
+				"type": "String"
+			},
+			{
+				"name": "q29_15_prob_eng",
+				"type": "String"
+			},
+			{
+				"name": "q29_16_prob_other",
+				"type": "String"
+			},
+			{
+				"name": "q29_17_prob_specify",
+				"type": "String"
+			},
+			{
+				"name": "q30_1_info_web",
+				"type": "String"
+			},
+			{
+				"name": "q30_2_web_specify",
+				"type": "String"
+			},
+			{
+				"name": "q30_3_info_fb",
+				"type": "String"
+			},
+			{
+				"name": "q30_4_info_twitter",
+				"type": "String"
+			},
+			{
+				"name": "q30_5_info_email",
+				"type": "String"
+			},
+			{
+				"name": "q30_6_info_friend",
+				"type": "String"
+			},
+			{
+				"name": "q30_7_info_other",
+				"type": "String"
+			},
+			{
+				"name": "q30_8_info_specify",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

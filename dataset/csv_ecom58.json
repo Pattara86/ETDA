@@ -1,0 +1,388 @@
+{
+	"name": "csv_ecom58",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "preped_ecom_58.csv",
+				"folderPath": "[dataset02] Ecommerce/preped"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "answer_id",
+				"type": "String"
+			},
+			{
+				"name": "q1_channel_name",
+				"type": "String"
+			},
+			{
+				"name": "q2_total_emp",
+				"type": "String"
+			},
+			{
+				"name": "q3_0_1_industry_name",
+				"type": "String"
+			},
+			{
+				"name": "q3_0_2_industry_subcategory_name",
+				"type": "String"
+			},
+			{
+				"name": "q3_0_3_industry_size",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_1_total_revenue_57",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_2_total_ecommerce_revenue_57",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_3_estimated_total_revenue_58_change_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_4_ecommerce_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_5_estimated_ecommerce_revenue_58_change_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_1_domestic_revenue_57_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_2_inter_revenue_57_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_3_bangkok_reg_revenue_57_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_4_central_reg_revenue_57_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_5_north_reg_revenue_57_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_6_northeast_reg_revenue_57_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_7_south_reg_revenue_57_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_8_top_1_selling_to_country",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_9_top_2_selling_to_country",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_10_top_3_selling_to_country",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_1_1_b2b_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_2_1_b2c_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_3_1_c2c_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_4_1_b2g_pct",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_1_2_b2b_avg_spent",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_2_2_b2c_avg_spent",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_3_2_c2c_avg_spent",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_4_2_b2g_avg_spent",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_1_order_channel_notebook",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_2_order_channel_mobile",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_3_order_channel_edi",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_4_order_channel_social_media",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_5_order_channel_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_1_order_channel_notebook_pct",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_2_order_channel_mobile_pct",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_3_order_channel_edi_pct",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_4_order_channel_social_media_pct",
+				"type": "String"
+			},
+			{
+				"name": "q5_0_5_order_channel_other_specify_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_1_mkt_budget_57",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_2_mkt_budget_57_online_pct",
+				"type": "String"
+			},
+			{
+				"name": "q6_0_3_mkt_budget_57_offline_pct",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_1_payment_channel_online_pct",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_2_payment_channel_offline_pct",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_3_payment_channel_credit_card",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_4_payment_channel_paypal",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_5_payment_channel_ebanking",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_6_payment_channel_mobile",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_7_payment_channel_fedi",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_8_payment_direct",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_9_payment_counter",
+				"type": "String"
+			},
+			{
+				"name": "q7_0_10_payment_postoffice_transfer",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_1_transaction_channel_emarketplace",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_2_transaction_channel_own_web_app",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_3_transaction_channel_social_media",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_4_transaction_channel_emarketplace",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_5_transaction_channel_sm_line",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_6_transaction_channel_sm_instagram",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_7_transaction_channel_sm_fb",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_8_transaction_channel_sm_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_9_transaction_channel_platform_ebay",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_10_transaction_channel_platform_amazon",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_11_transaction_channel_platform_alibaba",
+				"type": "String"
+			},
+			{
+				"name": "q8_0_12_transaction_channel_platform_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q9_0_1_storage_stocking_pct",
+				"type": "String"
+			},
+			{
+				"name": "q9_0_2_storage_cross_docking_pct",
+				"type": "String"
+			},
+			{
+				"name": "q9_0_3_storage_pre_order_pct",
+				"type": "String"
+			},
+			{
+				"name": "q10_0_1_delivery_channel_thaipost",
+				"type": "String"
+			},
+			{
+				"name": "q10_0_2_delivery_channel_shipping_company",
+				"type": "String"
+			},
+			{
+				"name": "q10_0_3_delivery_channel_receiving_point",
+				"type": "String"
+			},
+			{
+				"name": "q10_0_4_delivery_channel_electronic_transferred",
+				"type": "String"
+			},
+			{
+				"name": "q10_0_5_delivery_channel_own_transportation",
+				"type": "String"
+			},
+			{
+				"name": "q10_0_6_delivery_channel_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_1_Tax_exemption_income_tax",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_2_Tax_exemption_inport_material_tax",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_3_Tax_exemption_inport_duties_machinery",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_4__Tax_deduct_transportation_costs_electricity",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_5_legal_deducting_installation_fees_constructing_facilities",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_1_legal_promotion_risk_insurance",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_2_legal_law_protection_of_electronic_money_transfers",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_3_legal_electronic_signature",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_4_legal_enforcement_personal_data_protection_laws",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_5_legal_reduction_employment_conditions_skilled_workers",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_1_policy_Promote_investment_it_infra",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_2_policy_build_complaint_center",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_3_policy_build_workforce_capcity",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_4_policy_build_ebusiness_data_center",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_5_policy_build_ebusiness_document_standard",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_6_policy_promote_info_ebusiness_thailand_AEC",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_7_policy_other_specify",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

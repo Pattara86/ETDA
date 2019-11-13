@@ -1,0 +1,76 @@
+{
+	"name": "csv_mst_tambon_md_2018",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer5818",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds3/mdm"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "tambon_md_2018.csv",
+				"folderPath": "OneDrive_1_11-8-2019"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "tambon_code",
+				"type": "String"
+			},
+			{
+				"name": "province_name_th",
+				"type": "String"
+			},
+			{
+				"name": "province_name_en",
+				"type": "String"
+			},
+			{
+				"name": "district_name_th",
+				"type": "String"
+			},
+			{
+				"name": "district_name_en",
+				"type": "String"
+			},
+			{
+				"name": "tambon_name_th",
+				"type": "String"
+			},
+			{
+				"name": "tambon_name_en",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "last_upd_dttm",
+				"type": "String"
+			},
+			{
+				"name": "province_code",
+				"type": "String"
+			},
+			{
+				"name": "district_code",
+				"type": "String"
+			},
+			{
+				"name": "zipcode",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

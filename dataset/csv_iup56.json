@@ -1,0 +1,456 @@
+{
+	"name": "csv_iup56",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds1"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "preped_raw_iup_56.csv",
+				"folderPath": "[dataset01]IUP"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "answer_id",
+				"type": "String"
+			},
+			{
+				"name": "q1_sex",
+				"type": "String"
+			},
+			{
+				"name": "q2_age",
+				"type": "String"
+			},
+			{
+				"name": "q3_1_province_name_th",
+				"type": "String"
+			},
+			{
+				"name": "q3_2_district_name_th",
+				"type": "String"
+			},
+			{
+				"name": "q3_3_municipal_area_flg",
+				"type": "String"
+			},
+			{
+				"name": "q4_edu",
+				"type": "String"
+			},
+			{
+				"name": "q5_1_occu",
+				"type": "String"
+			},
+			{
+				"name": "q5_2_occu_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q6_family_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q7_family_incm",
+				"type": "String"
+			},
+			{
+				"name": "q8_internet_time_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q9_internet_time_dayhour",
+				"type": "String"
+			},
+			{
+				"name": "q10_1_internet_accs_loc_home_flg",
+				"type": "String"
+			},
+			{
+				"name": "q10_2_internet_accs_loc_office_flg",
+				"type": "String"
+			},
+			{
+				"name": "q10_3_internet_accs_loc_edu_inst_flg",
+				"type": "String"
+			},
+			{
+				"name": "q10_4_internet_accs_loc_internetcafe_flg",
+				"type": "String"
+			},
+			{
+				"name": "q10_5_internet_accs_loc_community_ctr_flg",
+				"type": "String"
+			},
+			{
+				"name": "q10_6_internet_accs_loc_other_flg",
+				"type": "String"
+			},
+			{
+				"name": "q10_7_internet_accs_loc_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_internet_accs_dev_pc_flg",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_internet_accs_dev_notebook_flg",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_internet_accs_dev_smartphone_flg",
+				"type": "String"
+			},
+			{
+				"name": "q11_4_internet_accs_dev_tablet_flg",
+				"type": "String"
+			},
+			{
+				"name": "q11_5_internet_accs_dev_smarttv_flg",
+				"type": "String"
+			},
+			{
+				"name": "q11_6_internet_accs_dev_other_flg",
+				"type": "String"
+			},
+			{
+				"name": "q11_7_internet_accs_dev_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q12_1_use_free_wifi",
+				"type": "String"
+			},
+			{
+				"name": "q12_2_use_free_wifi_rsn",
+				"type": "String"
+			},
+			{
+				"name": "q12_3_not_use_free_wifi_rsn",
+				"type": "String"
+			},
+			{
+				"name": "q13_1_internet_act_social_network_app",
+				"type": "String"
+			},
+			{
+				"name": "q13_2_internet_act_email",
+				"type": "String"
+			},
+			{
+				"name": "q13_3_internet_act_search",
+				"type": "String"
+			},
+			{
+				"name": "q13_4_internet_act_online_booking",
+				"type": "String"
+			},
+			{
+				"name": "q13_5_internet_act_news",
+				"type": "String"
+			},
+			{
+				"name": "q13_6_internet_act_ebanking",
+				"type": "String"
+			},
+			{
+				"name": "q13_7_internet_act_online_game",
+				"type": "String"
+			},
+			{
+				"name": "q13_8_internet_act_shopping",
+				"type": "String"
+			},
+			{
+				"name": "q13_9_internet_act_online_entertainment",
+				"type": "String"
+			},
+			{
+				"name": "q13_10_internet_act_download",
+				"type": "String"
+			},
+			{
+				"name": "q13_11_internet_act_ebook_reading",
+				"type": "String"
+			},
+			{
+				"name": "q13_12_internet_act_other",
+				"type": "String"
+			},
+			{
+				"name": "q13_13_internet_act_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q14_1_internet_prob_virus",
+				"type": "String"
+			},
+			{
+				"name": "q14_2_internet_prob_delay",
+				"type": "String"
+			},
+			{
+				"name": "q14_3_internet_prob_spam",
+				"type": "String"
+			},
+			{
+				"name": "q14_4_internet_prob_pornography",
+				"type": "String"
+			},
+			{
+				"name": "q14_5_internet_prob_cost",
+				"type": "String"
+			},
+			{
+				"name": "q14_6_internet_prob_accountability",
+				"type": "String"
+			},
+			{
+				"name": "q14_7_internet_prob_network_reliability",
+				"type": "String"
+			},
+			{
+				"name": "q14_8_internet_prob_service_availability",
+				"type": "String"
+			},
+			{
+				"name": "q14_9_internet_prob_lack_privacy",
+				"type": "String"
+			},
+			{
+				"name": "q14_10_internet_prob_mischief",
+				"type": "String"
+			},
+			{
+				"name": "q14_11_internet_prob_eng",
+				"type": "String"
+			},
+			{
+				"name": "q14_12_internet_prob_lack_law_know",
+				"type": "String"
+			},
+			{
+				"name": "q14_13_internet_prob_lack_gov_support",
+				"type": "String"
+			},
+			{
+				"name": "q14_14_internet_prob_other",
+				"type": "String"
+			},
+			{
+				"name": "q14_15_internet_prob_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q15_1_use_social_media_flg",
+				"type": "String"
+			},
+			{
+				"name": "q15_2_use_social_media_rsn",
+				"type": "String"
+			},
+			{
+				"name": "q16_1_social_media_accs_dev",
+				"type": "String"
+			},
+			{
+				"name": "q16_2_social_media_accs_dev_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q17_1_use_social_media_platform_fb",
+				"type": "String"
+			},
+			{
+				"name": "q17_2_use_social_media_platform_ggp",
+				"type": "String"
+			},
+			{
+				"name": "q17_3_use_social_media_platform_twitter",
+				"type": "String"
+			},
+			{
+				"name": "q17_4_use_social_media_platform_inst",
+				"type": "String"
+			},
+			{
+				"name": "q17_5_use_social_media_platform_whatapp",
+				"type": "String"
+			},
+			{
+				"name": "q17_6_use_social_media_platform_line",
+				"type": "String"
+			},
+			{
+				"name": "q17_7_use_social_media_platform_other",
+				"type": "String"
+			},
+			{
+				"name": "q17_8_use_social_media_platform_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q18_1_social_media_act_forward_share",
+				"type": "String"
+			},
+			{
+				"name": "q18_2_social_media_act_news_update",
+				"type": "String"
+			},
+			{
+				"name": "q18_3_social_media_act_upload",
+				"type": "String"
+			},
+			{
+				"name": "q18_4_social_media_act_shopping_service",
+				"type": "String"
+			},
+			{
+				"name": "q18_5_social_media_act_friend",
+				"type": "String"
+			},
+			{
+				"name": "q18_6_social_media_act_other",
+				"type": "String"
+			},
+			{
+				"name": "q18_7_social_media_act_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q19_1_shop_social_media",
+				"type": "String"
+			},
+			{
+				"name": "q19_2_not_shop_social_media_rsn",
+				"type": "String"
+			},
+			{
+				"name": "q20_1_shop_social_media_product_catg_cloth",
+				"type": "String"
+			},
+			{
+				"name": "q20_2_shop_social_media_product_catg_it_gadget",
+				"type": "String"
+			},
+			{
+				"name": "q20_3_shop_social_media_product_catg_cosmetics",
+				"type": "String"
+			},
+			{
+				"name": "q20_4_shop_social_media_product_catg_deal_coupon",
+				"type": "String"
+			},
+			{
+				"name": "q20_5_shop_social_media_product_catg_tour_package",
+				"type": "String"
+			},
+			{
+				"name": "q20_6_shop_social_media_product_catg_song",
+				"type": "String"
+			},
+			{
+				"name": "q20_7_shop_social_media_product_catg_food",
+				"type": "String"
+			},
+			{
+				"name": "q20_8_shop_social_media_product_catg_ebook",
+				"type": "String"
+			},
+			{
+				"name": "q20_9_shop_social_media_product_catg_game",
+				"type": "String"
+			},
+			{
+				"name": "q20_10_shop_social_media_product_catg_other",
+				"type": "String"
+			},
+			{
+				"name": "q20_11_shop_social_media_product_catg_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q21_shop_social_media_val",
+				"type": "String"
+			},
+			{
+				"name": "q22_m3_shop_social_media_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q23_1_shop_social_media_rsn",
+				"type": "String"
+			},
+			{
+				"name": "q23_2_shop_social_media_rsn_confident",
+				"type": "String"
+			},
+			{
+				"name": "q23_3_shop_social_media_rsn_better_promo",
+				"type": "String"
+			},
+			{
+				"name": "q23_4_shop_social_media_rsn_convinience",
+				"type": "String"
+			},
+			{
+				"name": "q23_5_shop_social_media_rsn_friend",
+				"type": "String"
+			},
+			{
+				"name": "q23_6_shop_social_media_rsn_other",
+				"type": "String"
+			},
+			{
+				"name": "q23_7_shop_social_media_rsn_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q24_1_source_website",
+				"type": "String"
+			},
+			{
+				"name": "q24_2_source_website_specify",
+				"type": "String"
+			},
+			{
+				"name": "q24_3_source_fb",
+				"type": "String"
+			},
+			{
+				"name": "q24_4_source_twitter",
+				"type": "String"
+			},
+			{
+				"name": "q24_5_source_email_org",
+				"type": "String"
+			},
+			{
+				"name": "q24_6_source_friend",
+				"type": "String"
+			},
+			{
+				"name": "q24_7_source_other",
+				"type": "String"
+			},
+			{
+				"name": "q24_8_source_other_specify",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

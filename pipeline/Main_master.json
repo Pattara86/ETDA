@@ -1,0 +1,22 @@
+{
+	"name": "Main_master",
+	"properties": {
+		"activities": [
+			{
+				"name": "MST",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "DS3_MST_Ingest_tsic_2544_md",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}

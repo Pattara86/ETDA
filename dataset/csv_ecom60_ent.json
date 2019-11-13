@@ -1,0 +1,64 @@
+{
+	"name": "csv_ecom60_ent",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds2"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "preped_ecom_60_ent.csv",
+				"folderPath": "[dataset02] Ecommerce/preped"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ent_name",
+				"type": "String"
+			},
+			{
+				"name": "group",
+				"type": "String"
+			},
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "total_revenue_59",
+				"type": "String"
+			},
+			{
+				"name": "est_growth_revenue_60",
+				"type": "String"
+			},
+			{
+				"name": "est_growth_revenue_60_pct",
+				"type": "String"
+			},
+			{
+				"name": "ecommerce_59_pct",
+				"type": "String"
+			},
+			{
+				"name": "ecommerce_59_total",
+				"type": "String"
+			},
+			{
+				"name": "industry_group",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

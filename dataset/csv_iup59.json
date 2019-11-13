@@ -1,0 +1,688 @@
+{
+	"name": "csv_iup59",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds1"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "preped_raw_iup_59.csv",
+				"folderPath": "[dataset01]IUP"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "answer_id",
+				"type": "String"
+			},
+			{
+				"name": "q1_sex",
+				"type": "String"
+			},
+			{
+				"name": "q2_status",
+				"type": "String"
+			},
+			{
+				"name": "q3_age",
+				"type": "String"
+			},
+			{
+				"name": "q4_1_place",
+				"type": "String"
+			},
+			{
+				"name": "q4_3_region",
+				"type": "String"
+			},
+			{
+				"name": "q4_2_place_code",
+				"type": "String"
+			},
+			{
+				"name": "q5_edu",
+				"type": "String"
+			},
+			{
+				"name": "q6_1_occu",
+				"type": "String"
+			},
+			{
+				"name": "q6_2_occu_specify",
+				"type": "String"
+			},
+			{
+				"name": "q7_personal_income",
+				"type": "String"
+			},
+			{
+				"name": "q8_family_income",
+				"type": "String"
+			},
+			{
+				"name": "q9_last_7d_time_spent_hour",
+				"type": "String"
+			},
+			{
+				"name": "q10_1_time_pc_total",
+				"type": "String"
+			},
+			{
+				"name": "q10_2_time_pc08",
+				"type": "String"
+			},
+			{
+				"name": "q10_3_time_pc12",
+				"type": "String"
+			},
+			{
+				"name": "q10_4_time_pc16",
+				"type": "String"
+			},
+			{
+				"name": "q10_5_time_pc20",
+				"type": "String"
+			},
+			{
+				"name": "q10_6_time_pc00",
+				"type": "String"
+			},
+			{
+				"name": "q10_7_time_pc04",
+				"type": "String"
+			},
+			{
+				"name": "q10_8_time_nb_total",
+				"type": "String"
+			},
+			{
+				"name": "q10_9_time_nb08",
+				"type": "String"
+			},
+			{
+				"name": "q10_10_time_nb12",
+				"type": "String"
+			},
+			{
+				"name": "q10_11_time_nb16",
+				"type": "String"
+			},
+			{
+				"name": "q10_12_time_nb20",
+				"type": "String"
+			},
+			{
+				"name": "q10_13_time_nb00",
+				"type": "String"
+			},
+			{
+				"name": "q10_14_time_nb04",
+				"type": "String"
+			},
+			{
+				"name": "q10_15_time_tablet_total",
+				"type": "String"
+			},
+			{
+				"name": "q10_16_time_tablet08",
+				"type": "String"
+			},
+			{
+				"name": "q10_17_time_tablet12",
+				"type": "String"
+			},
+			{
+				"name": "q10_18_time_tablet16",
+				"type": "String"
+			},
+			{
+				"name": "q10_19_time_tablet20",
+				"type": "String"
+			},
+			{
+				"name": "q10_20_time_tablet00",
+				"type": "String"
+			},
+			{
+				"name": "q10_21_time_tablet04",
+				"type": "String"
+			},
+			{
+				"name": "q10_22_time_sp_total",
+				"type": "String"
+			},
+			{
+				"name": "q10_23_time_sp08",
+				"type": "String"
+			},
+			{
+				"name": "q10_24_time_sp12",
+				"type": "String"
+			},
+			{
+				"name": "q10_25_time_sp16",
+				"type": "String"
+			},
+			{
+				"name": "q10_26_time_sp20",
+				"type": "String"
+			},
+			{
+				"name": "q10_27_time_sp00",
+				"type": "String"
+			},
+			{
+				"name": "q10_28_time_sp04",
+				"type": "String"
+			},
+			{
+				"name": "q10_29_time_stv_total",
+				"type": "String"
+			},
+			{
+				"name": "q10_30_time_stv08",
+				"type": "String"
+			},
+			{
+				"name": "q10_31_time_stv12",
+				"type": "String"
+			},
+			{
+				"name": "q10_32_time_stv16",
+				"type": "String"
+			},
+			{
+				"name": "q10_33_time_stv20",
+				"type": "String"
+			},
+			{
+				"name": "q10_34_time_stv00",
+				"type": "String"
+			},
+			{
+				"name": "q10_35_time_stv04",
+				"type": "String"
+			},
+			{
+				"name": "q10_36_time_other",
+				"type": "String"
+			},
+			{
+				"name": "q10_37_time_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q10_38_time_other_total",
+				"type": "String"
+			},
+			{
+				"name": "q10_39_time_other08",
+				"type": "String"
+			},
+			{
+				"name": "q10_40_time_other12",
+				"type": "String"
+			},
+			{
+				"name": "q10_41_time_other16",
+				"type": "String"
+			},
+			{
+				"name": "q10_42_time_other20",
+				"type": "String"
+			},
+			{
+				"name": "q10_43_time_other00",
+				"type": "String"
+			},
+			{
+				"name": "q10_44_time_other04",
+				"type": "String"
+			},
+			{
+				"name": "q11_1_place_home",
+				"type": "String"
+			},
+			{
+				"name": "q11_2_place_off",
+				"type": "String"
+			},
+			{
+				"name": "q11_3_place_sch",
+				"type": "String"
+			},
+			{
+				"name": "q11_4_place_netcaf",
+				"type": "String"
+			},
+			{
+				"name": "q11_5_place_mall",
+				"type": "String"
+			},
+			{
+				"name": "q11_6_place_onway",
+				"type": "String"
+			},
+			{
+				"name": "q11_7_place_other",
+				"type": "String"
+			},
+			{
+				"name": "q11_8_place_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q12_1_comp_sn",
+				"type": "String"
+			},
+			{
+				"name": "q12_2_mob_sn",
+				"type": "String"
+			},
+			{
+				"name": "q12_3_comp_youtube",
+				"type": "String"
+			},
+			{
+				"name": "q12_4_mob_youtube",
+				"type": "String"
+			},
+			{
+				"name": "q12_5_comp_ent",
+				"type": "String"
+			},
+			{
+				"name": "q12_6_mob_ent",
+				"type": "String"
+			},
+			{
+				"name": "q12_7_comp_load",
+				"type": "String"
+			},
+			{
+				"name": "q12_8_mob_load",
+				"type": "String"
+			},
+			{
+				"name": "q12_9_comp_game",
+				"type": "String"
+			},
+			{
+				"name": "q12_10_mob_game",
+				"type": "String"
+			},
+			{
+				"name": "q12_11_comp_mail",
+				"type": "String"
+			},
+			{
+				"name": "q12_12_mob_mail",
+				"type": "String"
+			},
+			{
+				"name": "q12_13_comp_search",
+				"type": "String"
+			},
+			{
+				"name": "q12_14_mob_search",
+				"type": "String"
+			},
+			{
+				"name": "q12_15_comp_book",
+				"type": "String"
+			},
+			{
+				"name": "q12_16_mob_book",
+				"type": "String"
+			},
+			{
+				"name": "q12_17_comp_e_learning",
+				"type": "String"
+			},
+			{
+				"name": "q12_18_mob_e_learning",
+				"type": "String"
+			},
+			{
+				"name": "q12_19_comp_stock",
+				"type": "String"
+			},
+			{
+				"name": "q12_20_mob_stock",
+				"type": "String"
+			},
+			{
+				"name": "q12_21_comp_bank",
+				"type": "String"
+			},
+			{
+				"name": "q12_22_mob_bank",
+				"type": "String"
+			},
+			{
+				"name": "q12_23_comp_tax",
+				"type": "String"
+			},
+			{
+				"name": "q12_24_mob_tax",
+				"type": "String"
+			},
+			{
+				"name": "q12_25_comp_shopping",
+				"type": "String"
+			},
+			{
+				"name": "q12_26_mob_shopping",
+				"type": "String"
+			},
+			{
+				"name": "q12_27_comp_selling",
+				"type": "String"
+			},
+			{
+				"name": "q12_28_mob_selling",
+				"type": "String"
+			},
+			{
+				"name": "q12_29_comp_ticket",
+				"type": "String"
+			},
+			{
+				"name": "q12_30_mob_ticket",
+				"type": "String"
+			},
+			{
+				"name": "q12_33_comp_specify",
+				"type": "String"
+			},
+			{
+				"name": "q12_34_mob_specify",
+				"type": "String"
+			},
+			{
+				"name": "q12_31_comp_other",
+				"type": "String"
+			},
+			{
+				"name": "q12_32_mob_other",
+				"type": "String"
+			},
+			{
+				"name": "q13_1_use_bill",
+				"type": "String"
+			},
+			{
+				"name": "q13_2_utility_bill",
+				"type": "String"
+			},
+			{
+				"name": "q13_3_credit_bill",
+				"type": "String"
+			},
+			{
+				"name": "q13_4_tax_invoice_bill",
+				"type": "String"
+			},
+			{
+				"name": "q13_5_receipt_bill",
+				"type": "String"
+			},
+			{
+				"name": "q13_6_other_bill",
+				"type": "String"
+			},
+			{
+				"name": "q13_7_other_bill_specify",
+				"type": "String"
+			},
+			{
+				"name": "q13_8_not_use_reason",
+				"type": "String"
+			},
+			{
+				"name": "q14_content",
+				"type": "String"
+			},
+			{
+				"name": "q15_thai_website",
+				"type": "String"
+			},
+			{
+				"name": "q16_1_sn_youtube",
+				"type": "String"
+			},
+			{
+				"name": "q16_2_sn_facebook",
+				"type": "String"
+			},
+			{
+				"name": "q16_3_sn_twitter",
+				"type": "String"
+			},
+			{
+				"name": "q16_4_sn_instagram",
+				"type": "String"
+			},
+			{
+				"name": "q16_5_sn_whatsapp",
+				"type": "String"
+			},
+			{
+				"name": "q16_6_sn_line",
+				"type": "String"
+			},
+			{
+				"name": "q16_7_sn_linkedin",
+				"type": "String"
+			},
+			{
+				"name": "q16_8_sn_other",
+				"type": "String"
+			},
+			{
+				"name": "q16_9_sn_specify",
+				"type": "String"
+			},
+			{
+				"name": "q16_10_sn_specify_l",
+				"type": "String"
+			},
+			{
+				"name": "q17_1_prob_speed",
+				"type": "String"
+			},
+			{
+				"name": "q17_2_prob_reliable",
+				"type": "String"
+			},
+			{
+				"name": "q17_3_prob_notthrough",
+				"type": "String"
+			},
+			{
+				"name": "q17_4_prob_exp",
+				"type": "String"
+			},
+			{
+				"name": "q17_5_prob_ads",
+				"type": "String"
+			},
+			{
+				"name": "q17_6_prob_junk",
+				"type": "String"
+			},
+			{
+				"name": "q17_7_prob_virus",
+				"type": "String"
+			},
+			{
+				"name": "q17_8_prob_porn",
+				"type": "String"
+			},
+			{
+				"name": "q17_9_prob_deceive",
+				"type": "String"
+			},
+			{
+				"name": "q17_10_prob_privacy",
+				"type": "String"
+			},
+			{
+				"name": "q17_11_prob_help",
+				"type": "String"
+			},
+			{
+				"name": "q17_12_prob_integrity",
+				"type": "String"
+			},
+			{
+				"name": "q17_13_prob_other",
+				"type": "String"
+			},
+			{
+				"name": "q17_14_prob_other_specify",
+				"type": "String"
+			},
+			{
+				"name": "q18_1_mobie_device",
+				"type": "String"
+			},
+			{
+				"name": "q18_2_mobile_network",
+				"type": "String"
+			},
+			{
+				"name": "q19_1_mobile_channel",
+				"type": "String"
+			},
+			{
+				"name": "q19_2_other channel_specify",
+				"type": "String"
+			},
+			{
+				"name": "q20_1_video_call_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q20_2_download_ent_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q20_3_share_file_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q20_4_watch_tv_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q20_5_live_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q20_6_download_ent_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q20_7_e_learning_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q20_8_map_traffic_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q20_9_other_activity",
+				"type": "String"
+			},
+			{
+				"name": "q20_10_other_activity_specify",
+				"type": "String"
+			},
+			{
+				"name": "q20_11_other_activity_cnt",
+				"type": "String"
+			},
+			{
+				"name": "q21_1_video_call_favourite",
+				"type": "String"
+			},
+			{
+				"name": "q21_2_download_ent",
+				"type": "String"
+			},
+			{
+				"name": "q21_3_share_file_favourite",
+				"type": "String"
+			},
+			{
+				"name": "q21_4_watch_tv_favourite",
+				"type": "String"
+			},
+			{
+				"name": "q21_5_live_favourite",
+				"type": "String"
+			},
+			{
+				"name": "q21_6_video_conference_favourite",
+				"type": "String"
+			},
+			{
+				"name": "q21_7_e_learning_favourite",
+				"type": "String"
+			},
+			{
+				"name": "q21_8_map_traffic_favourite",
+				"type": "String"
+			},
+			{
+				"name": "q21_9_other_favourite",
+				"type": "String"
+			},
+			{
+				"name": "q21_10_other_favourite_specify",
+				"type": "String"
+			},
+			{
+				"name": "q22_1_weak_signal",
+				"type": "String"
+			},
+			{
+				"name": "q22_2_battery_consume",
+				"type": "String"
+			},
+			{
+				"name": "q22_3_nomophobia",
+				"type": "String"
+			},
+			{
+				"name": "q22_4_high_cost",
+				"type": "String"
+			},
+			{
+				"name": "q22_5_health_prob",
+				"type": "String"
+			},
+			{
+				"name": "q22_6_other_prob",
+				"type": "String"
+			},
+			{
+				"name": "q22_7_other_prob_specify",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

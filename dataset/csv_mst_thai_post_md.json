@@ -1,0 +1,116 @@
+{
+	"name": "csv_mst_thai_post_md",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds3/mdm"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "thai_post_md.csv",
+				"folderPath": "[dataset03] SME Scoring/mdm"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "affiliate",
+				"type": "String"
+			},
+			{
+				"name": "assigned_zipcode",
+				"type": "String"
+			},
+			{
+				"name": "post_office_name",
+				"type": "String"
+			},
+			{
+				"name": "hq_addr_th",
+				"type": "String"
+			},
+			{
+				"name": "hq_tambon_th",
+				"type": "String"
+			},
+			{
+				"name": "hq_district_th",
+				"type": "String"
+			},
+			{
+				"name": "hq_province_th",
+				"type": "String"
+			},
+			{
+				"name": "hq_tel_no",
+				"type": "String"
+			},
+			{
+				"name": "note",
+				"type": "String"
+			},
+			{
+				"name": "tambon_code",
+				"type": "String"
+			},
+			{
+				"name": "province_name_th",
+				"type": "String"
+			},
+			{
+				"name": "province_name_en",
+				"type": "String"
+			},
+			{
+				"name": "district_name_th",
+				"type": "String"
+			},
+			{
+				"name": "district_name_en",
+				"type": "String"
+			},
+			{
+				"name": "tambon_name_th",
+				"type": "String"
+			},
+			{
+				"name": "tambon_name_en",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "last_upd_dttm",
+				"type": "String"
+			},
+			{
+				"name": "province_code",
+				"type": "String"
+			},
+			{
+				"name": "district_code",
+				"type": "String"
+			},
+			{
+				"name": "zipcode",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

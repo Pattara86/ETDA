@@ -1,0 +1,31 @@
+{
+	"name": "All_IUP_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"folderPath": "[dataset01]IUP"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "\"answer_id\"|\"q1_sex\"|\"q2_age\"|\"q3_1_province_name_th\"|\"q3_2_district_name_th\"|\"q3_3_municipal_area_flg\"|\"q4_edu\"|\"q5_1_occu\"|\"q5_2_occu_other_specify\"|\"q6_family_cnt\"|\"q7_family_incm\"|\"q8_internet_time_spent_hour\"|\"q9_internet_time_dayhour\"|\"q10_1_internet_accs_loc_home_flg\"|\"q10_2_internet_accs_loc_office_flg\"|\"q10_3_internet_accs_loc_edu_inst_flg\"|\"q10_4_internet_accs_loc_internetcafe_flg\"|\"q10_5_internet_accs_loc_community_ctr_flg\"|\"q10_6_internet_accs_loc_other_flg\"|\"q10_7_internet_accs_loc_other_specify\"|\"q11_1_internet_accs_dev_pc_flg\"|\"q11_2_internet_accs_dev_notebook_flg\"|\"q11_3_internet_accs_dev_smartphone_flg\"|\"q11_4_internet_accs_dev_tablet_flg\"|\"q11_5_internet_accs_dev_smarttv_flg\"|\"q11_6_internet_accs_dev_other_flg\"|\"q11_7_internet_accs_dev_other_specify\"|\"q12_1_use_free_wifi\"|\"q12_2_use_free_wifi_rsn\"|\"q12_3_not_use_free_wifi_rsn\"|\"q13_1_internet_act_social_network_app\"|\"q13_2_internet_act_email\"|\"q13_3_internet_act_search\"|\"q13_4_internet_act_online_booking\"|\"q13_5_internet_act_news\"|\"q13_6_internet_act_ebanking\"|\"q13_7_internet_act_online_game\"|\"q13_8_internet_act_shopping\"|\"q13_9_internet_act_online_entertainment\"|\"q13_10_internet_act_download\"|\"q13_11_internet_act_ebook_reading\"|\"q13_12_internet_act_other\"|\"q13_13_internet_act_other_specify\"|\"q14_1_internet_prob_virus\"|\"q14_2_internet_prob_delay\"|\"q14_3_internet_prob_spam\"|\"q14_4_internet_prob_pornography\"|\"q14_5_internet_prob_cost\"|\"q14_6_internet_prob_accountability\"|\"q14_7_internet_prob_network_reliability\"|\"q14_8_internet_prob_service_availability\"|\"q14_9_internet_prob_lack_privacy\"|\"q14_10_internet_prob_mischief\"|\"q14_11_internet_prob_eng\"|\"q14_12_internet_prob_lack_law_know\"|\"q14_13_internet_prob_lack_gov_support\"|\"q14_14_internet_prob_other\"|\"q14_15_internet_prob_other_specify\"|\"q15_1_use_social_media_flg\"|\"q15_2_use_social_media_rsn\"|\"q16_1_social_media_accs_dev\"|\"q16_2_social_media_accs_dev_other_specify\"|\"q17_1_use_social_media_platform_fb\"|\"q17_2_use_social_media_platform_ggp\"|\"q17_3_use_social_media_platform_twitter\"|\"q17_4_use_social_media_platform_inst\"|\"q17_5_use_social_media_platform_whatapp\"|\"q17_6_use_social_media_platform_line\"|\"q17_7_use_social_media_platform_other\"|\"q17_8_use_social_media_platform_other_specify\"|\"q18_1_social_media_act_forward_share\"|\"q18_2_social_media_act_news_update\"|\"q18_3_social_media_act_upload\"|\"q18_4_social_media_act_shopping_service\"|\"q18_5_social_media_act_friend\"|\"q18_6_social_media_act_other\"|\"q18_7_social_media_act_other_specify\"|\"q19_1_shop_social_media\"|\"q19_2_not_shop_social_media_rsn\"|\"q20_1_shop_social_media_product_catg_cloth\"|\"q20_2_shop_social_media_product_catg_it_gadget\"|\"q20_3_shop_social_media_product_catg_cosmetics\"|\"q20_4_shop_social_media_product_catg_deal_coupon\"|\"q20_5_shop_social_media_product_catg_tour_package\"|\"q20_6_shop_social_media_product_catg_song\"|\"q20_7_shop_social_media_product_catg_food\"|\"q20_8_shop_social_media_product_catg_ebook\"|\"q20_9_shop_social_media_product_catg_game\"|\"q20_10_shop_social_media_product_catg_other\"|\"q20_11_shop_social_media_product_catg_other_specify\"|\"q21_shop_social_media_val\"|\"q22_m3_shop_social_media_cnt\"|\"q23_1_shop_social_media_rsn\"|\"q23_2_shop_social_media_rsn_confident\"|\"q23_3_shop_social_media_rsn_better_promo\"|\"q23_4_shop_social_media_rsn_convinience\"|\"q23_5_shop_social_media_rsn_friend\"|\"q23_6_shop_social_media_rsn_other\"|\"q23_7_shop_social_media_rsn_other_specify\"|\"q24_1_source_website\"|\"q24_2_source_website_specify\"|\"q24_3_source_fb\"|\"q24_4_source_twitter\"|\"q24_5_source_email_org\"|\"q24_6_source_friend\"|\"q24_7_source_other\"|\"q24_8_source_other_specify\"",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

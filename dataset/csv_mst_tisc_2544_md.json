@@ -1,0 +1,44 @@
+{
+	"name": "csv_mst_tisc_2544_md",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer5818",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds3/mdm"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "tsic_2544_md.csv",
+				"folderPath": "OneDrive_1_11-8-2019"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2544_code",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2544_desc",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_code",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

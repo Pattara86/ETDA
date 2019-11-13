@@ -1,0 +1,60 @@
+{
+	"name": "csv_mst_district",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer5818",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds3/mdm"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "district.csv",
+				"folderPath": "OneDrive_1_11-8-2019"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "id",
+				"type": "String"
+			},
+			{
+				"name": "district_code",
+				"type": "String"
+			},
+			{
+				"name": "district_name_th",
+				"type": "String"
+			},
+			{
+				"name": "district_name_en",
+				"type": "String"
+			},
+			{
+				"name": "geo_id",
+				"type": "String"
+			},
+			{
+				"name": "province_id",
+				"type": "String"
+			},
+			{
+				"name": "code",
+				"type": "String"
+			},
+			{
+				"name": "last_upd_dttm",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

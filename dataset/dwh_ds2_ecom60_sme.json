@@ -1,0 +1,20 @@
+{
+	"name": "dwh_ds2_ecom60_sme",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics1",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "DWH/ds2"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "RAW",
+			"table": "ds2_ecom_60_sme"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

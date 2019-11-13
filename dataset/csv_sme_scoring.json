@@ -1,0 +1,431 @@
+{
+	"name": "csv_sme_scoring",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "tempstore4project",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "CSV/ds3"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureFileStorageLocation",
+				"fileName": "preped_indnso.csv"
+			},
+			"columnDelimiter": "|",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "a12_economic_activity_type",
+				"type": "String"
+			},
+			{
+				"name": "reg_region",
+				"type": "String"
+			},
+			{
+				"name": "cwt_province",
+				"type": "String"
+			},
+			{
+				"name": "amp_district",
+				"type": "String"
+			},
+			{
+				"name": "tam_tambon",
+				"type": "String"
+			},
+			{
+				"name": "mun_administrative_area",
+				"type": "String"
+			},
+			{
+				"name": "mun_name_name_of_municipalities",
+				"type": "String"
+			},
+			{
+				"name": "ea_enumeration_area",
+				"type": "String"
+			},
+			{
+				"name": "vil_village_no",
+				"type": "String"
+			},
+			{
+				"name": "a01_the_sequence_of_establishments",
+				"type": "String"
+			},
+			{
+				"name": "a02_street_name_of_establishments",
+				"type": "String"
+			},
+			{
+				"name": "a03_soi_name_of_establishments",
+				"type": "String"
+			},
+			{
+				"name": "a04_name_of_building_of_establishments",
+				"type": "String"
+			},
+			{
+				"name": "a05_building_no_of_establishments",
+				"type": "String"
+			},
+			{
+				"name": "a06_owner_title",
+				"type": "String"
+			},
+			{
+				"name": "a09_name_establishment",
+				"type": "String"
+			},
+			{
+				"name": "a10_listing_result",
+				"type": "String"
+			},
+			{
+				"name": "a11_economic_activity_catg",
+				"type": "String"
+			},
+			{
+				"name": "a13_form_of_legal_organization",
+				"type": "String"
+			},
+			{
+				"name": "a14_form_of_economic_organization",
+				"type": "String"
+			},
+			{
+				"name": "a15_commercial_registration_flg",
+				"type": "String"
+			},
+			{
+				"name": "a16_identification_number",
+				"type": "String"
+			},
+			{
+				"name": "a17_business_registration",
+				"type": "String"
+			},
+			{
+				"name": "a18_foreign_investment_or_share_holding",
+				"type": "String"
+			},
+			{
+				"name": "a19_number_of_persons_engaged",
+				"type": "String"
+			},
+			{
+				"name": "a20_number_of_employees",
+				"type": "String"
+			},
+			{
+				"name": "a21_period_of_operation",
+				"type": "String"
+			},
+			{
+				"name": "a22_type_of_service_accommodation",
+				"type": "String"
+			},
+			{
+				"name": "a23_number_of_rooms",
+				"type": "String"
+			},
+			{
+				"name": "a24_lowest_rate",
+				"type": "String"
+			},
+			{
+				"name": "a25_highest_rate",
+				"type": "String"
+			},
+			{
+				"name": "a26_number_of_beds",
+				"type": "String"
+			},
+			{
+				"name": "a27_use_computer_operation",
+				"type": "String"
+			},
+			{
+				"name": "a28_use_internet_operation",
+				"type": "String"
+			},
+			{
+				"name": "a29_sale_of_good_or_services_by_internet_through_own_website",
+				"type": "String"
+			},
+			{
+				"name": "a30_sale_of_good_or_services_by_internet_through_other_website",
+				"type": "String"
+			},
+			{
+				"name": "a31_sale_of_good_or_services_by_internet_through_e_market_place",
+				"type": "String"
+			},
+			{
+				"name": "a32_sale_of_good_or_services_by_internet_through_social_network",
+				"type": "String"
+			},
+			{
+				"name": "a33_not_sale_of_good_or_services_by_internet",
+				"type": "String"
+			},
+			{
+				"name": "a34_telephone",
+				"type": "String"
+			},
+			{
+				"name": "a35_website",
+				"type": "String"
+			},
+			{
+				"name": "a36_email",
+				"type": "String"
+			},
+			{
+				"name": "a37_nso_establishment_id",
+				"type": "String"
+			},
+			{
+				"name": "a38_economic_activity_code_tsic_2009",
+				"type": "String"
+			},
+			{
+				"name": "a39_establishment_hq_owner_title",
+				"type": "String"
+			},
+			{
+				"name": "a40_establishment_hq_owner_first_name",
+				"type": "String"
+			},
+			{
+				"name": "a41_establishment_hq_owner_last_name",
+				"type": "String"
+			},
+			{
+				"name": "a42_establishment_hq_name",
+				"type": "String"
+			},
+			{
+				"name": "a43_establishment_hq_addr_street",
+				"type": "String"
+			},
+			{
+				"name": "a44_establishment_hq_addr_soi",
+				"type": "String"
+			},
+			{
+				"name": "a45_establishment_hq_addr_name_of_building",
+				"type": "String"
+			},
+			{
+				"name": "a46_establishment_hq_addr_building_no",
+				"type": "String"
+			},
+			{
+				"name": "a47_establishment_hq_addr_tambon",
+				"type": "String"
+			},
+			{
+				"name": "a48_establishment_hq_addr_district",
+				"type": "String"
+			},
+			{
+				"name": "a49_establishment_hq_addr_province",
+				"type": "String"
+			},
+			{
+				"name": "a50_establishment_remark",
+				"type": "String"
+			},
+			{
+				"name": "a51_field_operator",
+				"type": "String"
+			},
+			{
+				"name": "a52_editing_and_coding_officer",
+				"type": "String"
+			},
+			{
+				"name": "a53_data_entry_officer",
+				"type": "String"
+			},
+			{
+				"name": "a54_moderator",
+				"type": "String"
+			},
+			{
+				"name": "a55_tsic_2009_code",
+				"type": "String"
+			},
+			{
+				"name": "a13_1_form_of_legal_organization_other",
+				"type": "String"
+			},
+			{
+				"name": "a14_1_form_of_economic_organization_other",
+				"type": "String"
+			},
+			{
+				"name": "tambon_code",
+				"type": "String"
+			},
+			{
+				"name": "province_name_th",
+				"type": "String"
+			},
+			{
+				"name": "province_name_en",
+				"type": "String"
+			},
+			{
+				"name": "district_name_th",
+				"type": "String"
+			},
+			{
+				"name": "district_name_en",
+				"type": "String"
+			},
+			{
+				"name": "tambon_name_th",
+				"type": "String"
+			},
+			{
+				"name": "tambon_name_en",
+				"type": "String"
+			},
+			{
+				"name": "status",
+				"type": "String"
+			},
+			{
+				"name": "last_upd_dttm",
+				"type": "String"
+			},
+			{
+				"name": "province_code",
+				"type": "String"
+			},
+			{
+				"name": "district_code",
+				"type": "String"
+			},
+			{
+				"name": "zipcode",
+				"type": "String"
+			},
+			{
+				"name": "isic_full_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_catg_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_sub_catg_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_grp_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_sub_grp_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_bot_sub_act_desc",
+				"type": "String"
+			},
+			{
+				"name": "isic_catg_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_sub_catg_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_grp_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_sub_grp_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_code",
+				"type": "String"
+			},
+			{
+				"name": "isic_bot_sub_act_code",
+				"type": "String"
+			},
+			{
+				"name": "isc_desc_en",
+				"type": "String"
+			},
+			{
+				"name": "parent_isic_full_code",
+				"type": "String"
+			},
+			{
+				"name": "manufacturing_catg_flg",
+				"type": "String"
+			},
+			{
+				"name": "service_catg_flg",
+				"type": "String"
+			},
+			{
+				"name": "wholsale_catg_flg",
+				"type": "String"
+			},
+			{
+				"name": "retail_catg_flg",
+				"type": "String"
+			},
+			{
+				"name": "isic_full_desc_th",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_catg",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_sub_catg",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_grp",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_sub_grp",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_code",
+				"type": "String"
+			},
+			{
+				"name": "tsic_2552_desc",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
